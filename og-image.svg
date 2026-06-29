@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: Replace with a 1200x630 raster JPG for best Facebook/WhatsApp preview support. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="75%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="60%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  <rect width="1200" height="630" fill="url(#glow3)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#06b6d4" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M100 0 V630 M200 0 V630 M300 0 V630 M400 0 V630 M500 0 V630 M600 0 V630 M700 0 V630 M800 0 V630 M900 0 V630 M1000 0 V630 M1100 0 V630"/>
+  </g>
+
+  <!-- Play-Shield logo (left of wordmark) -->
+  <g transform="translate(220, 235) scale(7)">
+    <path d="M12 2L4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z" fill="#06b6d4"/>
+    <path d="M10 8.5v7l6-3.5-6-3.5z" fill="#ffffff"/>
+  </g>
+
+  <!-- Wordmark "IQ stream" -->
+  <text x="380" y="320" font-family="Inter, system-ui, sans-serif" font-size="120" font-weight="900" fill="url(#text-gradient)" letter-spacing="-3">IQ stream</text>
+
+  <!-- Tagline -->
+  <text x="384" y="380" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="500" fill="#94a3b8" letter-spacing="1">MAGYARORSZÁG &#183; 4K ULTRA TV &#183; 10 000+ CSATORNA</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="610" width="1200" height="4" fill="url(#text-gradient)"/>
+
+  <!-- Stats pills -->
+  <g font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="22" fill="#e2e8f0">
+    <rect x="290" y="430" width="185" height="60" rx="30" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="315" cy="460" r="6" fill="#06b6d4"/>
+    <text x="332" y="468">4K Ultra HD</text>
+
+    <rect x="495" y="430" width="210" height="60" rx="30" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="520" cy="460" r="6" fill="#3b82f6"/>
+    <text x="537" y="468">Pufferelés nélkül</text>
+
+    <rect x="725" y="430" width="215" height="60" rx="30" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="750" cy="460" r="6" fill="#8b5cf6"/>
+    <text x="767" y="468">Azonnali aktiválás</text>
+  </g>
+</svg>
