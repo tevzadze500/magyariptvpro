@@ -4,9 +4,9 @@
 
     <!--
         Magyar IPTV Pro - XML Sitemap
-        SEO focus: only the two money pages are indexed — the homepage and the
-        installation guide. Legal pages (terms.html, privacy.html) and error.html
-        are noindex and intentionally excluded.
+        SEO focus: indexable money/long-tail pages only — homepage, installation
+        guide and the IBO Player setup article. Legal pages (terms.html,
+        privacy.html) and error.html are noindex and intentionally excluded.
     -->
 
     <!-- Homepage (Hungarian) -->
@@ -25,6 +25,14 @@
         <lastmod>2026-06-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+
+    <!-- Blog article: IBO Player setup (long-tail) -->
+    <url>
+        <loc>https://magyariptvpro.com/ibo-player-beallitas.html</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
 </urlset>
