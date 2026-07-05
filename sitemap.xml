@@ -27,12 +27,26 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog article: IBO Player setup (long-tail) -->
+    <!-- Blog article: IBO Player setup (HU) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/ibo-player-beallitas.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/ibo-player-beallitas.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/ibo-player-setup.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/ibo-player-setup.html" />
+    </url>
+
+    <!-- Blog article: IBO Player setup (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/ibo-player-setup.html</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/ibo-player-beallitas.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/ibo-player-setup.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/ibo-player-setup.html" />
     </url>
 
     <!-- Blog article: IPTV Smarters Pro setup (long-tail) -->
