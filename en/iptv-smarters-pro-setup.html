@@ -317,6 +317,14 @@
             font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         }
 
+        /* Troubleshooting alert box */
+        .alert-box {
+            border-left: 4px solid #f59e0b;
+        }
+        .alert-box ul { list-style: disc; padding-left: 1.3em; margin: 0; }
+        .alert-box li { margin: 0.6em 0; }
+        .alert-box li::marker { color: #f59e0b; }
+
         /* Custom scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #020617; }
@@ -366,7 +374,7 @@
     <div class="content-wrapper">
 
         <header>
-        <!-- Navbar (same design as the main site) -->
+        <!-- Navbar (glass, fixed) -->
         <nav class="glass fixed top-0 left-0 right-0 z-50" aria-label="Main navigation">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-16">
@@ -438,7 +446,7 @@
 
                     <p>IPTV Smarters Pro is one of the most popular, versatile, and user-friendly multimedia players available. In this comprehensive guide, you will learn exactly how to download, install, and configure it using Xtream Codes API or an M3U playlist on any device — the perfect companion for a premium <a href="/">IPTV service in Hungary</a>.</p>
 
-                    <!-- Top conversion CTA -->
+                    <!-- Top conversion box -->
                     <div class="glass-card rounded-2xl p-6 sm:p-7 text-center">
                         <h3 class="text-lg font-bold text-white mb-2">Need a Premium IPTV Subscription?</h3>
                         <p class="text-gray-400 text-sm mb-5">Get instant access to thousands of live premium channels and VOD with maximum stability.</p>
@@ -476,41 +484,36 @@
                     <h2>Alternative: Configure via M3U Playlist Link</h2>
                     <p>If your provider only gave you a long M3U URL, you can choose the <strong>"Load Your Playlist or File/URL"</strong> option instead. Paste your complete M3U link into the playlist path field, give it a name, and hit submit.</p>
 
-                    <!-- Mid-article support CTA -->
-                    <div class="glass-card rounded-2xl p-6 my-8 flex flex-col md:flex-row items-center justify-between gap-4 text-left">
-                        <div>
-                            <h4 class="text-lg font-bold text-white">Experiencing buffering or missing channels?</h4>
-                            <p class="text-gray-400 text-sm mt-1">Upgrade to a high-speed, anti-freezing server engineered for flawless HD and 4K playback.</p>
-                        </div>
-                        <a href="/#contact" data-wa-message="Hi! I am reading the Smarters Pro guide and I want a high-stability IPTV link." class="js-whatsapp-cta cta-button whitespace-nowrap px-6 py-3 rounded-lg font-bold text-white shadow-md">
-                            Contact Support
-                        </a>
+                    <!-- Mid-article troubleshooting alert box -->
+                    <div class="glass-card alert-box rounded-2xl p-6 sm:p-7 my-8">
+                        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                            <span aria-hidden="true">⚠️</span> Troubleshooting &amp; Common Fixes
+                        </h3>
+                        <ul class="text-sm text-gray-300">
+                            <li><strong class="text-white">Buffering or less-than-flawless HD/4K playback:</strong> switch your stream format from <code>TS</code> to <code>M3U8</code> in the application settings, or clear the app cache to force a clean reload.</li>
+                            <li><strong class="text-white">Data loading error:</strong> your Username and Password are strictly case-sensitive — re-type them carefully and remove any accidental trailing spaces.</li>
+                            <li><strong class="text-white">EPG not updating or shifted:</strong> go to Settings → Time Format and adjust the timezone offset to match your local time.</li>
+                        </ul>
+                        <p class="text-sm text-gray-400 mt-4">Still stuck? <a href="/#contact" data-wa-message="Hi! I'm setting up IPTV Smarters Pro and I need help fixing a playback/configuration issue." class="js-whatsapp-cta text-cyan-accent hover:text-blue-accent font-medium">Message our support on WhatsApp</a> — we fix it for you in minutes.</p>
                     </div>
-
-                    <h2>Troubleshooting &amp; Tips</h2>
-                    <ul>
-                        <li><strong>Data loading error:</strong> Double-check your Username and Password. They are strictly case-sensitive — make sure there are no accidental trailing spaces.</li>
-                        <li><strong>Buffering issues:</strong> Switch your stream format from TS to M3U8 in the application settings, or clear the app cache.</li>
-                        <li><strong>EPG not updating:</strong> Go to Settings → Time Format and adjust it to match your local timezone offset if your electronic TV program guide shifts.</li>
-                    </ul>
 
                 </div>
                 <!-- /Article body -->
 
-                <!-- ====== Bottom conversion CTA (free trial) ====== -->
+                <!-- ====== Bottom conversion hero (24h free trial) ====== -->
                 <aside class="mt-12">
                     <div class="glass-card rounded-3xl p-8 sm:p-10 text-center relative overflow-hidden">
                         <div class="absolute -top-20 -right-20 w-56 h-56 bg-cyan-accent rounded-full blur-3xl opacity-20" aria-hidden="true"></div>
                         <div class="absolute -bottom-20 -left-20 w-56 h-56 bg-blue-accent rounded-full blur-3xl opacity-20" aria-hidden="true"></div>
                         <div class="relative">
                             <span class="section-eyebrow">Free trial</span>
-                            <h2 class="text-2xl sm:text-3xl font-black mt-3 mb-4" style="letter-spacing:-0.02em; border:none; padding:0;">
+                            <h2 class="text-2xl sm:text-3xl font-black mt-3 mb-4" style="letter-spacing:-0.02em;">
                                 Start your <span class="gradient-text">24-hour free trial</span>
                             </h2>
                             <p class="text-gray-300 mb-7 max-w-xl mx-auto">
                                 Message us on WhatsApp — we'll send the Xtream Codes details and set everything up within 5 minutes, with no strings attached.
                             </p>
-                            <a href="/#contact" data-wa-message="Hi! I want to request the 24h free IPTV trial for IPTV Smarters Pro. Please send me the Xtream Codes details (Username, Password, and Server URL)." class="js-whatsapp-cta cta-button inline-flex items-center gap-2 px-7 sm:px-10 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-xl text-white shadow-2xl" aria-label="Request my free 24h trial on WhatsApp">
+                            <a href="/#contact" data-wa-message="Hi! I want to request the 24h free IPTV trial for IPTV Smarters Pro. Please send me the Xtream Codes details (Username, Password, and Server URL)." class="js-whatsapp-cta inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 px-7 sm:px-10 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-xl text-white shadow-2xl transition-all hover:scale-105" aria-label="Request my free 24h trial on WhatsApp">
                                 <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                                 </svg>
@@ -525,7 +528,7 @@
 
         </main>
 
-        <!-- Footer (same design as the main site) -->
+        <!-- Footer (4 columns) -->
         <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-card-border">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -580,7 +583,7 @@
     </div>
 
     <!-- Sticky WhatsApp Button -->
-    <a id="stickyWhatsAppBtn" href="/#contact" class="js-whatsapp-cta whatsapp-sticky flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-full font-semibold shadow-2xl transition-all hover:scale-110" aria-label="Message us on WhatsApp">
+    <a id="stickyWhatsAppBtn" href="/#contact" data-wa-message="Hi! I want to request the 24h free IPTV trial for IPTV Smarters Pro. Please send me the Xtream Codes details (Username, Password, and Server URL)." class="js-whatsapp-cta whatsapp-sticky flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-full font-semibold shadow-2xl transition-all hover:scale-110" aria-label="Message us on WhatsApp">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
         </svg>
@@ -589,7 +592,7 @@
 
     <!-- JavaScript -->
     <script>
-        // CONFIG — single source of truth for the WhatsApp tunnel (English)
+        // CONFIG — single source of truth for the WhatsApp tunnel (English defaults)
         const CONFIG = {
             phoneNumber: '19297186779',
             phoneDisplay: '+1 929 718 6779',
