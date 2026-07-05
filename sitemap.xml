@@ -9,14 +9,26 @@
         pages (terms.html, privacy.html) and error.html are noindex and excluded.
     -->
 
-    <!-- Homepage (Hungarian) -->
+    <!-- Homepage (Hungarian) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/</loc>
-        <lastmod>2026-06-28</lastmod>
+        <lastmod>2026-07-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="hu" href="https://magyariptvpro.com/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/" />
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/" />
+    </url>
+
+    <!-- Homepage (English silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/" />
     </url>
 
     <!-- Installation guide -->
