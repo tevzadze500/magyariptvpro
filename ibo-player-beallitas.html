@@ -548,43 +548,44 @@
             if (this.classList.contains('cta-disabled')) e.preventDefault();
         }
 
-        function wireWhatsAppCTAs() {
-            document.querySelectorAll('.js-whatsapp-cta').forEach(btn => {
-                const url = buildWhatsAppUrl(btn.getAttribute('data-wa-message'));
-                if (url) {
-                    btn.href = url;
-                    btn.target = '_blank';
-                    btn.rel = 'noopener noreferrer';
-                    btn.classList.remove('cta-disabled');
-                    btn.removeAttribute('aria-disabled');
-                } else {
-                    btn.classList.add('cta-disabled');
-                    btn.setAttribute('aria-disabled', 'true');
-                    btn.title = 'A WhatsApp hamarosan elérhető';
-                    btn.addEventListener('click', preventDisabledClick);
-                }
-            });
-
-            const footer = document.getElementById('footerWhatsApp');
-            if (footer && CONFIG.phoneNumber) {
-                footer.innerHTML = `WhatsApp: <a href="${buildWhatsAppUrl()}" class="hover:text-cyan-accent transition-colors" target="_blank" rel="noopener noreferrer">${CONFIG.phoneDisplay}</a>`;
+        function initWhatsApp() {
+            // Met à jour l'affichage du numéro dans le footer
+            const footerWhatsApp = document.getElementById('footerWhatsApp');
+            if (footerWhatsApp) {
+                footerWhatsApp.innerHTML = `WhatsApp: <a href="https://wa.me/${CONFIG.phoneNumber}" class="text-white hover:text-cyan-accent transition-colors font-medium">${CONFIG.phoneDisplay}</a>`;
             }
+
+            // Configure tous les boutons avec la classe .js-whatsapp-cta
+            const ctaButtons = document.querySelectorAll('.js-whatsapp-cta');
+            ctaButtons.forEach(button => {
+                const customMessage = button.getAttribute('data-wa-message');
+                button.href = buildWhatsAppUrl(customMessage);
+                button.setAttribute('target', '_blank');
+                button.setAttribute('rel', 'noopener noreferrer');
+                button.addEventListener('click', preventDisabledClick);
+            });
         }
 
-        // Gestion active de la barre de progression de lecture
-        window.addEventListener('scroll', () => {
-            const winScroll = window.scrollY || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        // Gestion dynamique de la barre de progression globale
+        function initReadingProgressBar() {
             const progressIndicator = document.getElementById('readingProgress');
-            if (progressIndicator) {
-                progressIndicator.style.width = scrolled + '%';
-            }
-        });
+            if (!progressIndicator) return;
 
-        // Initialisation au chargement de la page
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.scrollY || document.documentElement.scrollTop;
+                const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+                if (totalHeight > 0) {
+                    const percentage = (currentScroll / totalHeight) * 100;
+                    progressIndicator.style.width = `${percentage}%`;
+                }
+            });
+        }
+
+        // Lancement au chargement du DOM
         document.addEventListener('DOMContentLoaded', () => {
-            wireWhatsAppCTAs();
+            initWhatsApp();
+            initReadingProgressBar();
         });
     </script>
 </body>
