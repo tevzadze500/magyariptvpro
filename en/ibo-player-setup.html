@@ -566,7 +566,7 @@
             // Update the phone number shown in the footer
             const footerWhatsApp = document.getElementById('footerWhatsApp');
             if (footerWhatsApp && CONFIG.phoneDisplay) {
-                footerWhatsApp.innerHTML = `WhatsApp: <a href="${buildWhatsAppUrl()}" class="text-gray-400 hover:text-cyan-accent transition-colors font-medium">${CONFIG.phoneDisplay}</a>`;
+                footerWhatsApp.innerHTML = `WhatsApp: <a href="${buildWhatsAppUrl()}" class="text-white hover:text-cyan-accent transition-colors font-medium">${CONFIG.phoneDisplay}</a>`;
             }
 
             // Bind URLs to all WhatsApp CTA buttons
@@ -580,6 +580,9 @@
                 }
                 const customMessage = btn.getAttribute('data-wa-message');
                 btn.href = buildWhatsAppUrl(customMessage);
+                btn.setAttribute('target', '_blank');
+                btn.setAttribute('rel', 'noopener noreferrer');
+                btn.addEventListener('click', preventDisabledClick);
             });
         }
 
