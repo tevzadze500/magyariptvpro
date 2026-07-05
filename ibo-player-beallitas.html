@@ -532,11 +532,11 @@
 
     <!-- JavaScript -->
     <script>
-        // CONFIG (synchronisé avec index.html)
+        // CONFIG — single source of truth for the WhatsApp tunnel (Hungarian)
         const CONFIG = {
             phoneNumber: '19297186779',
             phoneDisplay: '+1 929 718 6779',
-            message: 'Szia! Érdeklődöm a prémium IPTV szolgáltatásról. Kérhetnék több információt'
+            message: 'Szia! Szeretnék több információt kapni a prémium IPTV szolgáltatásról.'
         };
 
         function buildWhatsAppUrl(message) {
@@ -550,40 +550,45 @@
         }
 
         function initWhatsApp() {
-            // Met à jour l'affichage du numéro dans le footer
+            // Update the phone number shown in the footer
             const footerWhatsApp = document.getElementById('footerWhatsApp');
-            if (footerWhatsApp) {
-                footerWhatsApp.innerHTML = `WhatsApp: <a href="https://wa.me/${CONFIG.phoneNumber}" class="text-white hover:text-cyan-accent transition-colors font-medium">${CONFIG.phoneDisplay}</a>`;
+            if (footerWhatsApp && CONFIG.phoneDisplay) {
+                footerWhatsApp.innerHTML = `WhatsApp: <a href="${buildWhatsAppUrl()}" class="text-white hover:text-cyan-accent transition-colors font-medium">${CONFIG.phoneDisplay}</a>`;
             }
 
-            // Configure tous les boutons avec la classe .js-whatsapp-cta
+            // Bind URLs to all WhatsApp CTA buttons
             const ctaButtons = document.querySelectorAll('.js-whatsapp-cta');
-            ctaButtons.forEach(button => {
-                const customMessage = button.getAttribute('data-wa-message');
-                button.href = buildWhatsAppUrl(customMessage);
-                button.setAttribute('target', '_blank');
-                button.setAttribute('rel', 'noopener noreferrer');
-                button.addEventListener('click', preventDisabledClick);
+            ctaButtons.forEach(btn => {
+                if (!CONFIG.phoneNumber) {
+                    btn.classList.add('cta-disabled');
+                    btn.href = '#';
+                    btn.addEventListener('click', preventDisabledClick);
+                    return;
+                }
+                const customMessage = btn.getAttribute('data-wa-message');
+                btn.href = buildWhatsAppUrl(customMessage);
+                btn.setAttribute('target', '_blank');
+                btn.setAttribute('rel', 'noopener noreferrer');
+                btn.addEventListener('click', preventDisabledClick);
             });
         }
 
-        // Gestion dynamique de la barre de progression globale
         function initReadingProgressBar() {
             const progressIndicator = document.getElementById('readingProgress');
             if (!progressIndicator) return;
 
             window.addEventListener('scroll', () => {
-                const currentScroll = window.scrollY || document.documentElement.scrollTop;
-                const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-                if (totalHeight > 0) {
-                    const percentage = (currentScroll / totalHeight) * 100;
-                    progressIndicator.style.width = `${percentage}%`;
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                if (totalHeight <= 0) {
+                    progressIndicator.style.width = '0%';
+                    return;
                 }
+                const progress = (window.scrollY / totalHeight) * 100;
+                progressIndicator.style.width = `${progress}%`;
             });
         }
 
-        // Lancement au chargement du DOM
+        // Execution on DOM Ready
         document.addEventListener('DOMContentLoaded', () => {
             initWhatsApp();
             initReadingProgressBar();
