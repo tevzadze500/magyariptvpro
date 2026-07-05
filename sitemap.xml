@@ -5,8 +5,8 @@
     <!--
         Magyar IPTV Pro - XML Sitemap
         SEO focus: indexable money/long-tail pages only — homepage, installation
-        guide and the IBO Player setup article. Legal pages (terms.html,
-        privacy.html) and error.html are noindex and intentionally excluded.
+        guide and the setup articles (HU + EN silo, paired via hreflang). Legal
+        pages (terms.html, privacy.html) and error.html are noindex and excluded.
     -->
 
     <!-- Homepage (Hungarian) -->
@@ -49,12 +49,26 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/ibo-player-setup.html" />
     </url>
 
-    <!-- Blog article: IPTV Smarters Pro setup (long-tail) -->
+    <!-- Blog article: IPTV Smarters Pro setup (HU) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/iptv-smarters-pro-beallitas.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/iptv-smarters-pro-beallitas.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/iptv-smarters-pro-setup.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/iptv-smarters-pro-setup.html" />
+    </url>
+
+    <!-- Blog article: IPTV Smarters Pro setup (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/iptv-smarters-pro-setup.html</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/iptv-smarters-pro-beallitas.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/iptv-smarters-pro-setup.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/iptv-smarters-pro-setup.html" />
     </url>
 
 </urlset>
