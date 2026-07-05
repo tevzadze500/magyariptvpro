@@ -566,31 +566,24 @@
 
             const footer = document.getElementById('footerWhatsApp');
             if (footer && CONFIG.phoneNumber) {
-                footer.innerHTML = `WhatsApp: <a href="${buildWhatsAppUrl()}" target="_blank" rel="noopener noreferrer" class="text-cyan-accent hover:text-blue-accent transition-colors">${CONFIG.phoneDisplay}</a>`;
+                footer.innerHTML = `WhatsApp: <a href="${buildWhatsAppUrl()}" class="hover:text-cyan-accent transition-colors" target="_blank" rel="noopener noreferrer">${CONFIG.phoneDisplay}</a>`;
             }
         }
 
-        function initReadingProgress() {
-            const bar = document.getElementById('readingProgress');
-            const article = document.querySelector('article');
-            if (!bar || !article) return;
-            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            const update = () => {
-                const rect = article.getBoundingClientRect();
-                const total = article.offsetHeight - window.innerHeight;
-                const scrolled = -rect.top;
-                const pct = Math.max(0, Math.min(100, (scrolled / total) * 100));
-                bar.style.width = pct + '%';
-            };
-            if (prefersReduced) { bar.style.width = '0%'; return; }
-            window.addEventListener('scroll', update, { passive: true });
-            window.addEventListener('resize', update);
-            update();
-        }
+        // Gestion active de la barre de progression de lecture
+        window.addEventListener('scroll', () => {
+            const winScroll = window.scrollY || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+            const progressIndicator = document.getElementById('readingProgress');
+            if (progressIndicator) {
+                progressIndicator.style.width = scrolled + '%';
+            }
+        });
 
+        // Initialisation au chargement de la page
         document.addEventListener('DOMContentLoaded', () => {
             wireWhatsAppCTAs();
-            initReadingProgress();
         });
     </script>
 </body>
