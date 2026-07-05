@@ -35,4 +35,12 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Blog article: IPTV Smarters Pro setup (long-tail) -->
+    <url>
+        <loc>https://magyariptvpro.com/iptv-smarters-pro-beallitas.html</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
