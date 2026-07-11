@@ -31,12 +31,26 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/" />
     </url>
 
-    <!-- Installation guide -->
+    <!-- Installation guide (HU) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/install-guide.html</loc>
         <lastmod>2026-06-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/install-guide.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/install-guide.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/install-guide.html" />
+    </url>
+
+    <!-- Installation guide (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/install-guide.html</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/install-guide.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/install-guide.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/install-guide.html" />
     </url>
 
     <!-- Blog article: IBO Player setup (HU) + EN alternate -->
