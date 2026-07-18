@@ -141,4 +141,26 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/ibo-vs-tivimate.html" />
     </url>
 
+    <!-- Guides hub / blog (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/utmutatok.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/utmutatok.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/guides.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/guides.html" />
+    </url>
+
+    <!-- Guides hub / blog (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/guides.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/utmutatok.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/guides.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/guides.html" />
+    </url>
+
 </urlset>
