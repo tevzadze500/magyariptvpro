@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magyar IPTV Hibaelhárítási Útmutató 2026 | Akadozás, Bejelentkezés, VPN</title>
+    <meta name="description" content="Magyar IPTV hibaelhárítási útmutató 2026: akadozás és pufferelés megszüntetése, bejelentkezési hibák javítása, VPN beállítás és ajánlott lejátszók lépésről lépésre.">
+    <meta name="keywords" content="magyar iptv, iptv hibaelhárítás, iptv akadozás, iptv pufferelés, iptv bejelentkezési hiba, tivimate, vpn iptv">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#020617">
+    <meta name="author" content="Magyar IPTV Pro">
+
+    <link rel="canonical" href="https://magyariptvpro.com/blog.html">
+    <link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/blog.html">
+    <link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/blog.html">
+    <link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/blog.html">
+    <link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/blog.html">
+
+    <!-- Open Graph (Article) -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Magyar IPTV Hibaelhárítási Útmutató 2026">
+    <meta property="og:description" content="Akadozás, pufferelés, bejelentkezési hibák és VPN — a teljes Magyar IPTV hibaelhárítási útmutató lépésről lépésre.">
+    <meta property="og:image" content="https://magyariptvpro.com/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Magyar IPTV hibaelhárítási útmutató – Magyar IPTV Pro">
+    <meta property="og:url" content="https://magyariptvpro.com/blog.html">
+    <meta property="og:site_name" content="Magyar IPTV Pro">
+    <meta property="og:locale" content="hu_HU">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="article:published_time" content="2026-07-19">
+    <meta property="article:modified_time" content="2026-07-19">
+    <meta property="article:author" content="Magyar IPTV Pro">
+    <meta property="article:section" content="IPTV hibaelhárítás">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Magyar IPTV Hibaelhárítási Útmutató 2026">
+    <meta name="twitter:description" content="Akadozás, bejelentkezési hibák, VPN és ajánlott lejátszók — minden megoldás egy helyen.">
+    <meta name="twitter:image" content="https://magyariptvpro.com/og-image.svg">
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Kezdőlap", "item": "https://magyariptvpro.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog" }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD: Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Magyar IPTV Hibaelhárítási Útmutató 2026",
+        "description": "Magyar IPTV hibaelhárítási útmutató: akadozás és pufferelés megszüntetése, bejelentkezési hibák javítása, VPN beállítás és ajánlott lejátszók lépésről lépésre.",
+        "image": "https://magyariptvpro.com/og-image.svg",
+        "inLanguage": "hu",
+        "datePublished": "2026-07-19",
+        "dateModified": "2026-07-19",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://magyariptvpro.com/blog.html"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Magyar IPTV Pro",
+            "url": "https://magyariptvpro.com/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Magyar IPTV Pro",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://magyariptvpro.com/logo.svg"
+            }
+        }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzA2YjZkNCIvPjxzdG9wIG9mZnNldD0iLjU1IiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOSIgZmlsbD0idXJsKCNnKSIvPjxwYXRoIGQ9Ik0xMS41IDExLjIgMTkuOCAxNiAxMS41IDIwLjhaIiBmaWxsPSIjZmZmIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTIyLjIgMTIuM2E1LjYgNS42IDAgMCAxIDAgNy40IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS43IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiIG9wYWNpdHk9Ii44Ii8+PC9zdmc+">
+    <link rel="mask-icon" href="/logo.svg" color="#3b82f6">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#020617',
+                        'card-bg': '#0f172a',
+                        'card-border': '#1e293b',
+                        'cyan-accent': '#06b6d4',
+                        'blue-accent': '#3b82f6',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #020617;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Cosmic Fluid Background */
+        .cosmic-background {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0;
+            background: linear-gradient(180deg, #020617 0%, #0a1628 50%, #020617 100%);
+        }
+        .cosmic-background::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background:
+                radial-gradient(ellipse at 20% 30%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(59, 130, 246, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+            animation: cosmicFlow 20s ease-in-out infinite;
+        }
+        .cosmic-background::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image:
+                linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+                linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridFlow 30s linear infinite;
+        }
+        @keyframes cosmicFlow {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(-5%, 5%) rotate(5deg); }
+            66% { transform: translate(5%, -5%) rotate(-5deg); }
+        }
+        @keyframes gridFlow {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        .light-streak {
+            position: absolute;
+            width: 2px; height: 200px;
+            background: linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.5), transparent);
+            animation: streak 8s ease-in-out infinite;
+        }
+        .light-streak:nth-child(1) { left: 20%; animation-delay: 0s; }
+        .light-streak:nth-child(2) { left: 50%; animation-delay: 3s; }
+        .light-streak:nth-child(3) { left: 80%; animation-delay: 6s; }
+        @keyframes streak {
+            0% { top: -200px; opacity: 0; }
+            50% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+
+        /* Design tokens */
+        .gradient-text {
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            box-shadow:
+                0 8px 32px 0 rgba(0, 0, 0, 0.37),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        /* CTA button */
+        .cta-button {
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        .cta-button:hover::before { left: 100%; }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.5);
+        }
+        .cta-disabled { opacity: 0.65; cursor: not-allowed; }
+
+        /* WhatsApp sticky button */
+        .whatsapp-sticky {
+            position: fixed;
+            bottom: 20px; right: 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            animation: whatsappPulse 2s ease-in-out infinite;
+        }
+        @keyframes whatsappPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @media (max-width: 640px) {
+            .whatsapp-sticky { bottom: 10px; right: 10px; padding: 12px 14px; }
+            .whatsapp-sticky svg { width: 22px; height: 22px; }
+        }
+
+        /* Section helpers */
+        .section-eyebrow {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #06b6d4;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            margin-bottom: 12px;
+            padding: 6px 14px;
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 999px;
+        }
+        .section-title {
+            font-size: clamp(1.875rem, 4.5vw, 3rem);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        /* Step number badge */
+        .step-number {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.1rem;
+            color: #fff;
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+        }
+
+        /* Inline support CTA at the end of each section */
+        .section-cta {
+            border-left: 3px solid #06b6d4;
+            background: rgba(6, 182, 212, 0.07);
+        }
+
+        /* Reading progress bar */
+        .reading-progress {
+            position: fixed;
+            top: 0; left: 0;
+            height: 3px;
+            width: 0%;
+            background: linear-gradient(90deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
+            z-index: 9999;
+            transition: width 0.1s linear;
+            box-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #06b6d4 0%, #3b82f6 100%);
+            border-radius: 4px;
+        }
+
+        /* Smooth scroll + focus */
+        html { scroll-behavior: smooth; }
+        a:focus-visible, button:focus-visible, summary:focus-visible {
+            outline: 2px solid #06b6d4;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .cosmic-background::before,
+            .cosmic-background::after,
+            .light-streak,
+            .whatsapp-sticky,
+            .reading-progress { animation: none !important; transition: none !important; }
+        }
+
+        .content-wrapper { position: relative; z-index: 1; }
+    </style>
+</head>
+<body class="bg-deep-blue text-white antialiased">
+
+    <!-- Reading progress bar -->
+    <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+
+    <!-- Cosmic background -->
+    <div class="cosmic-background">
+        <div class="light-streak"></div>
+        <div class="light-streak"></div>
+        <div class="light-streak"></div>
+    </div>
+
+    <div class="content-wrapper">
+
+        <header>
+        <!-- Navbar -->
+        <nav class="glass fixed top-0 left-0 right-0 z-50" aria-label="Főnavigáció">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <a href="index.html" class="flex items-center space-x-2" aria-label="Magyar IPTV Pro - főoldal">
+                        <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="mipLogoBlogHuHeader" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#06b6d4"/>
+                                    <stop offset=".55" stop-color="#3b82f6"/>
+                                    <stop offset="1" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="32" height="32" rx="9" fill="url(#mipLogoBlogHuHeader)"/>
+                            <path d="M11.5 11.2 19.8 16 11.5 20.8Z" fill="#fff" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+                            <path d="M22.2 12.3a5.6 5.6 0 0 1 0 7.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round" opacity=".8"/>
+                        </svg>
+                        <span class="text-xl font-bold gradient-text">Magyar IPTV Pro</span>
+                    </a>
+
+                    <div class="flex items-center space-x-4">
+                        <a href="/utmutatok.html" class="text-sm font-medium text-gray-300 hover:text-cyan-accent transition-colors">Útmutatók</a>
+                        <a href="/blog.html" aria-current="page" class="text-sm font-medium text-gray-300 hover:text-cyan-accent transition-colors">Blog</a>
+                        <a href="/en/blog.html" hreflang="en" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">English</a>
+                        <a href="index.html#contact" class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-cyan-accent to-blue-accent rounded-lg hover:shadow-lg transition-all">
+                            Támogatás 24/7
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <main id="main" class="pt-24">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="Morzsamenü" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+                <ol class="flex items-center flex-wrap text-sm text-gray-400 gap-2">
+                    <li><a href="index.html" class="hover:text-cyan-accent transition-colors">Kezdőlap</a></li>
+                    <li aria-hidden="true">/</li>
+                    <li class="text-gray-300" aria-current="page">Hibaelhárítási útmutató</li>
+                </ol>
+            </nav>
+
+            <!-- Hero -->
+            <section class="pt-10 pb-12 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <span class="section-eyebrow">Hibaelhárítás</span>
+                    <h1 class="font-black mt-4 mb-6" style="font-size:clamp(2rem,6vw,3.5rem); line-height:1.08; letter-spacing:-0.02em;">
+                        <span class="gradient-text">Magyar IPTV</span> Hibaelhárítási Útmutató 2026
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto" style="line-height:1.6;">
+                        Akadozik a kép, nem sikerül a bejelentkezés, vagy lassú a csatornaváltás? Ez az útmutató végigvezet minden gyakori hibán, a leggyorsabb megoldásoktól a haladó beállításokig — hogy a Magyar IPTV élményed újra tökéletes legyen.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-6">Frissítve: 2026. július 19. · Magyar IPTV Pro ügyfélszolgálati csapat · 8 perc olvasás</p>
+                </div>
+            </section>
+
+            <!-- Quick navigation -->
+            <section class="pb-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <nav class="glass-card rounded-2xl p-6 sm:p-7" aria-label="Gyors navigáció">
+                        <h2 class="text-lg font-bold mb-4">Gyors navigáció</h2>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+                            <li><a href="#gyors-megoldasok" class="text-cyan-accent hover:text-blue-accent transition-colors">1. Gyors megoldások</a></li>
+                            <li><a href="#akadozas" class="text-cyan-accent hover:text-blue-accent transition-colors">2. Akadozás és pufferelés</a></li>
+                            <li><a href="#bejelentkezes" class="text-cyan-accent hover:text-blue-accent transition-colors">3. Bejelentkezési hibák</a></li>
+                            <li><a href="#vpn" class="text-cyan-accent hover:text-blue-accent transition-colors">4. VPN telepítési útmutató</a></li>
+                            <li><a href="#lejatszok" class="text-cyan-accent hover:text-blue-accent transition-colors">5. Ajánlott lejátszók</a></li>
+                            <li><a href="#gyik" class="text-cyan-accent hover:text-blue-accent transition-colors">6. Gyakori kérdések</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- 1. Quick fixes -->
+            <section id="gyors-megoldasok" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">1. Gyors megoldások — kezdd itt</h2>
+                        <p class="text-gray-400 mb-6">Tapasztalatunk szerint a bejelentett hibák nagyjából 80%-a megoldódik az alábbi négy lépéssel, öt percen belül. Mielőtt bármi bonyolultabba kezdenél, próbáld ki ezeket sorban.</p>
+
+                        <div class="space-y-5">
+                            <div class="flex items-start gap-4">
+                                <span class="step-number" aria-hidden="true">1</span>
+                                <div>
+                                    <h3 class="font-bold text-white mb-1">Indítsd újra a modemet és a routert</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">Húzd ki az eszközt a konnektorból, várj teljes <strong class="text-white">30 másodpercet</strong>, majd dugd vissza. Ez üríti a memóriát és új útvonalat kér a szolgáltatódtól. Banálisnak hangzik, mégis ez oldja meg a legtöbb hirtelen fellépő akadozást.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="step-number" aria-hidden="true">2</span>
+                                <div>
+                                    <h3 class="font-bold text-white mb-1">Mérd meg a valós sebességet a Fast.com oldalon</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">Ugyanazon az eszközön mérj, amelyiken nézni szeretnél. Irányadó értékek: <strong class="text-white">15 Mbps</strong> a stabil HD-hez, <strong class="text-white">30 Mbps</strong> a 4K-hoz. Ha ez alatt vagy, a probléma az internetkapcsolatnál van, nem a Magyar IPTV szolgáltatásnál.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="step-number" aria-hidden="true">3</span>
+                                <div>
+                                    <h3 class="font-bold text-white mb-1">Válts az 5 GHz-es WiFi sávra</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">A 2,4 GHz-es sáv zsúfolt és lassabb. A router beállításaiban válaszd az <strong class="text-white">5 GHz-es</strong> hálózatot. A legstabilabb megoldás továbbra is a <strong class="text-white">vezetékes (ethernet)</strong> csatlakozás — ha a tévé mellett van aljzat, használd.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="step-number" aria-hidden="true">4</span>
+                                <div>
+                                    <h3 class="font-bold text-white mb-1">Próbáld ki a TiviMate lejátszót</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">A tévék gyári lejátszói gyakran gyenge puffert használnak. A <a href="tivimate-beallitas.html" class="text-cyan-accent hover:text-blue-accent underline">TiviMate</a> lényegesen jobb dekódolót és előtöltést kínál — sok esetben önmagában ez megszünteti az akadozást.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            Ha ezek sem segítenek, írj ránk WhatsApp-on a Magyar IPTV Pro ügyfélszolgálatának!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Buffering -->
+            <section id="akadozas" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">2. Akadozás és pufferelés megszüntetése</h2>
+                        <p class="text-gray-400 mb-6">A pufferelésnek szinte mindig három oka lehet: a lejátszó, a hálózati útvonal, vagy az eszköz terheltsége. Nézzük végig mindhármat.</p>
+
+                        <h3 class="font-bold text-white mb-2">A lejátszó a legfontosabb tényező</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">Ugyanaz az adás egyik alkalmazásban akadozik, a másikban tökéletes. A TiviMate nagyobb puffert tart fenn és hatékonyabban dekódol, ezért Android TV-n, Google TV-n és Firestick-en ezt ajánljuk elsőként. A beállításokban a <strong class="text-white">buffer méretét</strong> érdemes közepesre vagy nagyra állítani, ha ingadozó a kapcsolatod.</p>
+
+                        <h3 class="font-bold text-white mb-2">Amikor a szolgáltatód lassítja a videóforgalmat</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">Egyes internetszolgáltatók csúcsidőben visszafogják a nagy sávszélességű videóforgalmat (ezt hívják sávszélesség-korlátozásnak). Árulkodó jel: este 20 és 23 óra között akadozik minden, napközben viszont hibátlan. Ilyenkor egy VPN titkosított alagútja gyakran kisimítja a képet — erről bővebben a <a href="#vpn" class="text-cyan-accent hover:text-blue-accent underline">VPN szekcióban</a>.</p>
+
+                        <h3 class="font-bold text-white mb-2">Az eszköz optimalizálása</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-400 text-sm mb-2">
+                            <li>Zárd be a háttérben futó alkalmazásokat — az olcsóbb Android boxok memóriája hamar betelik.</li>
+                            <li>Ürítsd a lejátszó gyorsítótárát havonta egyszer.</li>
+                            <li>Kapcsold ki a tévé „képjavító" utófeldolgozását, ami késleltetést okozhat.</li>
+                            <li>Ha egyszerre több eszközön néztek, ellenőrizd, hogy az előfizetésed engedi-e a párhuzamos kapcsolatot.</li>
+                        </ul>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            Ha ezek sem segítenek, írj ránk WhatsApp-on a Magyar IPTV Pro ügyfélszolgálatának!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Login -->
+            <section id="bejelentkezes" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">3. Bejelentkezési hibák javítása</h2>
+                        <p class="text-gray-400 mb-6">Ha az alkalmazás „Invalid credentials", „Authorization failed" vagy hasonló üzenetet ad, szinte mindig az alábbi négy ok valamelyikéről van szó.</p>
+
+                        <h3 class="font-bold text-white mb-2">Ellenőrizd a hozzáférési adatokat karakterről karakterre</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">A leggyakoribb hiba egy <strong class="text-white">felesleges szóköz</strong> a másolás végén, vagy a nagybetű–kisbetű elírása. A Szerver URL-t (Server), a felhasználónevet (Username) és a jelszót (Password) pontosan úgy add meg, ahogy WhatsApp-on megkaptad — a záró perjelet se hagyd le, ha szerepel benne.</p>
+
+                        <h3 class="font-bold text-white mb-2">Ellenőrizd az előfizetés állapotát</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">Lejárt előfizetésnél a szerver ugyanezt a hibaüzenetet adja vissza. Ha bizonytalan vagy a lejárati dátumban, egy üzenet a csapatunknak azonnal tisztázza.</p>
+
+                        <h3 class="font-bold text-white mb-2">Próbáld VPN-nel</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">Ha az adataid biztosan helyesek, de a kapcsolat mégsem jön létre, előfordulhat, hogy a szolgáltatód útvonala akadályozza az elérést. Egy VPN bekapcsolása gyorsan kizárja vagy megerősíti ezt a lehetőséget.</p>
+
+                        <h3 class="font-bold text-white mb-2">Ürítsd a gyorsítótárat, vagy telepítsd újra</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-2">A sérült helyi adatok makacs bejelentkezési hibákat okoznak. Az eszköz beállításaiban töröld az alkalmazás gyorsítótárát, majd add hozzá újra a lejátszási listát. Végső lépésként telepítsd újra az alkalmazást — a Magyar IPTV hozzáférésed ettől nem vész el.</p>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            Ha ezek sem segítenek, írj ránk WhatsApp-on a Magyar IPTV Pro ügyfélszolgálatának!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. VPN -->
+            <section id="vpn" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">4. VPN telepítési útmutató</h2>
+                        <p class="text-gray-400 mb-6">A VPN két konkrét problémára jelent megoldást: titkosítja a forgalmadat, így a szolgáltatód nem tudja szelektíven lassítani a videót, és stabilabb útvonalat adhat, ha a hálózati útvonalválasztás gyenge. Adatvédelmi szempontból is hasznos.</p>
+
+                        <h3 class="font-bold text-white mb-2">Melyik VPN-t ajánljuk?</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">A <strong class="text-white">ProtonVPN</strong> a favoritunk: svájci joghatóság, független auditokkal igazolt naplózásmentes (no-log) működés, és van korlátlan adatforgalmú ingyenes csomagja, amivel kockázat nélkül tesztelheted, hogy nálad tényleg a szolgáltatói lassítás okozza-e a gondot.</p>
+
+                        <h3 class="font-bold text-white mb-2">Telepítés lépésről lépésre</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-400 text-sm mb-5">
+                            <li>Telepítsd a ProtonVPN alkalmazást az eszközöd áruházából (Google Play, App Store, Amazon Appstore).</li>
+                            <li>Hozz létre fiókot, és jelentkezz be.</li>
+                            <li>Válassz egy <strong class="text-white">földrajzilag közeli szervert</strong> — Magyarország, Ausztria vagy Szlovákia adja a legkisebb késleltetést.</li>
+                            <li>Csatlakozz, majd indítsd újra a lejátszót, hogy friss kapcsolatot építsen.</li>
+                            <li>Ellenőrizd újra a sebességet a Fast.com-on: a VPN-nek legfeljebb néhány százalékot szabad levennie.</li>
+                        </ol>
+
+                        <p class="text-gray-400 text-sm leading-relaxed mb-2"><strong class="text-white">Tipp:</strong> ha a VPN-nel <em>lassabb</em> lesz a kapcsolat, próbálj másik szervert. A túl távoli szerver (például tengerentúli) mindig ront a képminőségen.</p>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            Ha ezek sem segítenek, írj ránk WhatsApp-on a Magyar IPTV Pro ügyfélszolgálatának!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Players -->
+            <section id="lejatszok" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">5. Ajánlott lejátszók</h2>
+                        <p class="text-gray-400 mb-6">A megfelelő alkalmazás kiválasztása a legnagyobb egyetlen minőségi ugrás, amit elérhetsz. Íme a három, amit a Magyar IPTV Pro ügyfeleinek ajánlunk.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                            <div class="glass rounded-xl p-5">
+                                <h3 class="font-bold text-white mb-2">TiviMate</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">A legjobb választás Android TV-re, Google TV-re és Firestick-re. Villámgyors csatornaváltás, teljes EPG műsorújság, kedvenc listák. <a href="tivimate-beallitas.html" class="text-cyan-accent hover:text-blue-accent underline">Beállítási útmutató</a>.</p>
+                            </div>
+                            <div class="glass rounded-xl p-5">
+                                <h3 class="font-bold text-white mb-2">IPTV Smarters Pro</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">A legsokoldalúbb: Androidon, iOS-en, Windowson és Smart TV-n is fut. Ha több különböző eszközöd van, ez a legegyszerűbb közös nevező. <a href="iptv-smarters-pro-beallitas.html" class="text-cyan-accent hover:text-blue-accent underline">Beállítási útmutató</a>.</p>
+                            </div>
+                            <div class="glass rounded-xl p-5">
+                                <h3 class="font-bold text-white mb-2">VLC</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">PC-n és Mac-en kiváló <strong class="text-white">diagnosztikai eszköz</strong>: ha egy adás VLC-ben elindul, de a tévén nem, akkor a hiba az eszközön vagy a lejátszón van, nem a szolgáltatásban.</p>
+                            </div>
+                        </div>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            Ha ezek sem segítenek, írj ránk WhatsApp-on a Magyar IPTV Pro ügyfélszolgálatának!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. FAQ -->
+            <section id="gyik" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-8">
+                        <span class="section-eyebrow">GYIK</span>
+                        <h2 class="section-title font-black mt-2">Gyakori <span class="gradient-text">kérdések</span></h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <details class="glass-card rounded-xl p-6 group">
+                            <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                                <span>Miért akadozik csak esténként a Magyar IPTV adás?</span>
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-gray-400">Ez jellemzően csúcsidei hálózati terhelés vagy a szolgáltatód sávszélesség-korlátozása. Először mérj sebességet este 21 óra körül, majd próbáld ki ugyanazt VPN-nel — ha a VPN megoldja, a szolgáltatói lassítás volt az ok.</p>
+                        </details>
+
+                        <details class="glass-card rounded-xl p-6 group">
+                            <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                                <span>Mennyire stabil a szolgáltatás sportközvetítés közben?</span>
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-gray-400">A szervereink terheléselosztással működnek, éppen a nagy nézettségű események miatt. A gyakorlatban a néző oldalán dönt a minőség: vezetékes kapcsolattal és TiviMate lejátszóval a Magyar IPTV élmény lényegesen stabilabb, mint gyári tévéalkalmazással, WiFi-n.</p>
+                        </details>
+
+                        <details class="glass-card rounded-xl p-6 group">
+                            <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                                <span>Elveszítem a hozzáférésemet, ha újratelepítem az alkalmazást?</span>
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-gray-400">Nem. A hozzáférésed a fiókodhoz kötődik, nem az alkalmazáshoz. Újratelepítés után egyszerűen add meg ismét a Szerver URL-t, a felhasználónevet és a jelszót. Ha nem találod őket, WhatsApp-on újraküldjük.</p>
+                        </details>
+
+                        <details class="glass-card rounded-xl p-6 group">
+                            <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                                <span>Kötelező a VPN a Magyar IPTV használatához?</span>
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-gray-400">Nem kötelező — az ügyfeleink többsége VPN nélkül használja. Akkor érdemes bekapcsolni, ha a szolgáltatód bizonyítottan lassítja a videóforgalmat, vagy ha extra adatvédelmet szeretnél.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Need help -->
+            <section id="segitseg" class="py-16 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden">
+                        <div class="absolute -top-24 -right-24 w-64 h-64 bg-cyan-accent rounded-full blur-3xl opacity-20" aria-hidden="true"></div>
+                        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-accent rounded-full blur-3xl opacity-20" aria-hidden="true"></div>
+                        <div class="relative">
+                            <span class="section-eyebrow">Segítségre van szükséged?</span>
+                            <h2 class="section-title font-black mt-2 mb-5">
+                                A csapatunk <span class="gradient-text">2 percen belül</span> válaszol
+                            </h2>
+                            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                                Nem kell egyedül bajlódnod vele. Írd meg, milyen eszközt használsz és mit tapasztalsz — a Magyar IPTV Pro ügyfélszolgálata végigvezet a megoldáson, és ha kell, távolról be is állítjuk neked.
+                            </p>
+                            <a href="index.html#contact" data-wa-message="Szia! A hibaelhárítási útmutatót olvastam a Magyar IPTV Pro oldalán. Segítségre lenne szükségem – leírom, milyen eszközt használok és mi a probléma." class="js-whatsapp-cta inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-bold text-lg sm:text-xl text-white shadow-2xl transition-all hover:scale-105" aria-label="Írj a Magyar IPTV Pro ügyfélszolgálatának WhatsApp-on">
+                                <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                Írj nekünk WhatsApp-on
+                            </a>
+                            <p class="mt-6 text-sm text-gray-400">0–24 órában elérhető · Távoli beállítás díjmentesen</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-card-border">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="mipLogoBlogHuFooter" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06b6d4"/>
+                                        <stop offset=".55" stop-color="#3b82f6"/>
+                                        <stop offset="1" stop-color="#8b5cf6"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="32" height="32" rx="9" fill="url(#mipLogoBlogHuFooter)"/>
+                                <path d="M11.5 11.2 19.8 16 11.5 20.8Z" fill="#fff" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+                                <path d="M22.2 12.3a5.6 5.6 0 0 1 0 7.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round" opacity=".8"/>
+                            </svg>
+                            <span class="font-bold gradient-text">Magyar IPTV Pro</span>
+                        </div>
+                        <p class="text-sm text-gray-400">
+                            Prémium IPTV szolgáltatás Magyarországnak. 4K minőség, több mint 10 000+ élő csatorna.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold mb-4">Gyors linkek</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="index.html#pricing" class="hover:text-cyan-accent transition-colors">Csomagok</a></li>
+                            <li><a href="index.html#features" class="hover:text-cyan-accent transition-colors">Funkciók</a></li>
+                            <li><a href="index.html" class="hover:text-cyan-accent transition-colors">Főoldal</a></li>
+                            <li><a href="index.html#contact" class="hover:text-cyan-accent transition-colors">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold mb-4">Támogatás</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="blog.html" class="hover:text-cyan-accent transition-colors">Hibaelhárítási útmutató</a></li>
+                            <li><a href="utmutatok.html" class="hover:text-cyan-accent transition-colors">Útmutatók</a></li>
+                            <li><a href="install-guide.html" class="hover:text-cyan-accent transition-colors">Telepítési útmutató</a></li>
+                            <li><a href="tivimate-beallitas.html" class="hover:text-cyan-accent transition-colors">TiviMate beállítás</a></li>
+                            <li><a href="ibo-vs-tivimate.html" class="hover:text-cyan-accent transition-colors">IBO vs TiviMate</a></li>
+                            <li><a href="terms.html" class="hover:text-cyan-accent transition-colors">Általános Szerződési Feltételek</a></li>
+                            <li><a href="privacy.html" class="hover:text-cyan-accent transition-colors">Adatvédelmi tájékoztató</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold mb-4">Kapcsolat</h4>
+                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <span class="text-gray-500">hamarosan elérhető</span></p>
+                        <p class="text-sm text-gray-400 mb-4">Email: <a href="mailto:contact@magyariptvpro.com" class="hover:text-cyan-accent transition-colors">contact@magyariptvpro.com</a></p>
+                        <p class="text-xs text-gray-500">0-24 órában elérhető segítség</p>
+                    </div>
+                </div>
+
+                <div class="pt-8 border-t border-card-border text-center text-sm text-gray-500">
+                    <p>&copy; 2026 Magyar IPTV Pro. Minden jog fenntartva.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Sticky WhatsApp Button -->
+    <a id="stickyWhatsAppBtn" href="index.html#contact" data-wa-message="Szia! A Magyar IPTV hibaelhárítási útmutatót olvasom, és segítségre lenne szükségem." class="js-whatsapp-cta whatsapp-sticky flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-full font-semibold shadow-2xl transition-all hover:scale-110" aria-label="Írj nekünk WhatsApp-on">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span class="hidden sm:inline">Írj nekünk</span>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // CONFIG — single source of truth for the WhatsApp tunnel (Hungarian)
+        const CONFIG = {
+            phoneNumber: '19297186779',
+            phoneDisplay: '+1 929 718 6779',
+            message: 'Szia! Szeretnék több információt kapni a prémium IPTV szolgáltatásról.'
+        };
+
+        function buildWhatsAppUrl(message) {
+            if (!CONFIG.phoneNumber) return '';
+            const text = (message && message.trim()) ? message : CONFIG.message;
+            return `https://wa.me/${CONFIG.phoneNumber}?text=${encodeURIComponent(text)}`;
+        }
+
+        function preventDisabledClick(e) {
+            if (this.classList.contains('cta-disabled')) e.preventDefault();
+        }
+
+        function initWhatsApp() {
+            const footerWhatsApp = document.getElementById('footerWhatsApp');
+            if (footerWhatsApp && CONFIG.phoneDisplay) {
+                footerWhatsApp.innerHTML = `WhatsApp: <a href="${buildWhatsAppUrl()}" class="text-white hover:text-cyan-accent transition-colors font-medium">${CONFIG.phoneDisplay}</a>`;
+            }
+
+            const ctaButtons = document.querySelectorAll('.js-whatsapp-cta');
+            ctaButtons.forEach(btn => {
+                if (!CONFIG.phoneNumber) {
+                    btn.classList.add('cta-disabled');
+                    btn.href = '#';
+                    btn.addEventListener('click', preventDisabledClick);
+                    return;
+                }
+                const customMessage = btn.getAttribute('data-wa-message');
+                btn.href = buildWhatsAppUrl(customMessage);
+                btn.setAttribute('target', '_blank');
+                btn.setAttribute('rel', 'noopener noreferrer');
+                btn.addEventListener('click', preventDisabledClick);
+            });
+        }
+
+        function initReadingProgressBar() {
+            const progressIndicator = document.getElementById('readingProgress');
+            if (!progressIndicator) return;
+
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                if (totalHeight <= 0) {
+                    progressIndicator.style.width = '0%';
+                    return;
+                }
+                const progress = (window.scrollY / totalHeight) * 100;
+                progressIndicator.style.width = `${progress}%`;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initWhatsApp();
+            initReadingProgressBar();
+        });
+    </script>
+</body>
+</html>

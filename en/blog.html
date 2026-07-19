@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magyar IPTV Troubleshooting Guide 2026 | Buffering, Login, VPN</title>
+    <meta name="description" content="Magyar IPTV troubleshooting guide 2026: fix buffering and freezing, solve login errors, set up a VPN, and pick the right player — step by step.">
+    <meta name="keywords" content="magyar iptv, iptv troubleshooting, iptv buffering, iptv login error, tivimate, vpn iptv, iptv hungary">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#020617">
+    <meta name="author" content="Magyar IPTV Pro">
+
+    <link rel="canonical" href="https://magyariptvpro.com/en/blog.html">
+    <link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/blog.html">
+    <link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/blog.html">
+    <link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/blog.html">
+    <link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/blog.html">
+
+    <!-- Open Graph (Article) -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Magyar IPTV Troubleshooting Guide 2026">
+    <meta property="og:description" content="Buffering, login errors, VPN setup and player choice — the complete Magyar IPTV troubleshooting guide, step by step.">
+    <meta property="og:image" content="https://magyariptvpro.com/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Magyar IPTV troubleshooting guide – Magyar IPTV Pro">
+    <meta property="og:url" content="https://magyariptvpro.com/en/blog.html">
+    <meta property="og:site_name" content="Magyar IPTV Pro">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="hu_HU">
+    <meta property="article:published_time" content="2026-07-19">
+    <meta property="article:modified_time" content="2026-07-19">
+    <meta property="article:author" content="Magyar IPTV Pro">
+    <meta property="article:section" content="IPTV Troubleshooting">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Magyar IPTV Troubleshooting Guide 2026">
+    <meta name="twitter:description" content="Buffering, login errors, VPN and recommended players — every fix in one place.">
+    <meta name="twitter:image" content="https://magyariptvpro.com/og-image.svg">
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://magyariptvpro.com/en/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog" }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD: Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Magyar IPTV Troubleshooting Guide 2026",
+        "description": "Magyar IPTV troubleshooting guide: fix buffering and freezing, solve login errors, set up a VPN, and pick the right player — step by step.",
+        "image": "https://magyariptvpro.com/og-image.svg",
+        "inLanguage": "en",
+        "datePublished": "2026-07-19",
+        "dateModified": "2026-07-19",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://magyariptvpro.com/en/blog.html"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Magyar IPTV Pro",
+            "url": "https://magyariptvpro.com/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Magyar IPTV Pro",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://magyariptvpro.com/logo.svg"
+            }
+        }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzA2YjZkNCIvPjxzdG9wIG9mZnNldD0iLjU1IiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOSIgZmlsbD0idXJsKCNnKSIvPjxwYXRoIGQ9Ik0xMS41IDExLjIgMTkuOCAxNiAxMS41IDIwLjhaIiBmaWxsPSIjZmZmIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTIyLjIgMTIuM2E1LjYgNS42IDAgMCAxIDAgNy40IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS43IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiIG9wYWNpdHk9Ii44Ii8+PC9zdmc+">
+    <link rel="mask-icon" href="/logo.svg" color="#3b82f6">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#020617',
+                        'card-bg': '#0f172a',
+                        'card-border': '#1e293b',
+                        'cyan-accent': '#06b6d4',
+                        'blue-accent': '#3b82f6',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #020617;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Cosmic Fluid Background */
+        .cosmic-background {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0;
+            background: linear-gradient(180deg, #020617 0%, #0a1628 50%, #020617 100%);
+        }
+        .cosmic-background::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background:
+                radial-gradient(ellipse at 20% 30%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(59, 130, 246, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+            animation: cosmicFlow 20s ease-in-out infinite;
+        }
+        .cosmic-background::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image:
+                linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+                linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridFlow 30s linear infinite;
+        }
+        @keyframes cosmicFlow {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(-5%, 5%) rotate(5deg); }
+            66% { transform: translate(5%, -5%) rotate(-5deg); }
+        }
+        @keyframes gridFlow {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        .light-streak {
+            position: absolute;
+            width: 2px; height: 200px;
+            background: linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.5), transparent);
+            animation: streak 8s ease-in-out infinite;
+        }
+        .light-streak:nth-child(1) { left: 20%; animation-delay: 0s; }
+        .light-streak:nth-child(2) { left: 50%; animation-delay: 3s; }
+        .light-streak:nth-child(3) { left: 80%; animation-delay: 6s; }
+        @keyframes streak {
+            0% { top: -200px; opacity: 0; }
+            50% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+
+        /* Design tokens */
+        .gradient-text {
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            box-shadow:
+                0 8px 32px 0 rgba(0, 0, 0, 0.37),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        /* CTA button */
+        .cta-button {
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        .cta-button:hover::before { left: 100%; }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.5);
+        }
+        .cta-disabled { opacity: 0.65; cursor: not-allowed; }
+
+        /* WhatsApp sticky button */
+        .whatsapp-sticky {
+            position: fixed;
+            bottom: 20px; right: 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            animation: whatsappPulse 2s ease-in-out infinite;
+        }
+        @keyframes whatsappPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @media (max-width: 640px) {
+            .whatsapp-sticky { bottom: 10px; right: 10px; padding: 12px 14px; }
+            .whatsapp-sticky svg { width: 22px; height: 22px; }
+        }
+
+        /* Section helpers */
+        .section-eyebrow {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #06b6d4;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            margin-bottom: 12px;
+            padding: 6px 14px;
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 999px;
+        }
+        .section-title {
+            font-size: clamp(1.875rem, 4.5vw, 3rem);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        /* Step number badge */
+        .step-number {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.1rem;
+            color: #fff;
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+        }
+
+        /* Inline support CTA at the end of each section */
+        .section-cta {
+            border-left: 3px solid #06b6d4;
+            background: rgba(6, 182, 212, 0.07);
+        }
+
+        /* Reading progress bar */
+        .reading-progress {
+            position: fixed;
+            top: 0; left: 0;
+            height: 3px;
+            width: 0%;
+            background: linear-gradient(90deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
+            z-index: 9999;
+            transition: width 0.1s linear;
+            box-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #06b6d4 0%, #3b82f6 100%);
+            border-radius: 4px;
+        }
+
+        /* Smooth scroll + focus */
+        html { scroll-behavior: smooth; }
+        a:focus-visible, button:focus-visible, summary:focus-visible {
+            outline: 2px solid #06b6d4;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .cosmic-background::before,
+            .cosmic-background::after,
+            .light-streak,
+            .whatsapp-sticky,
+            .reading-progress { animation: none !important; transition: none !important; }
+        }
+
+        .content-wrapper { position: relative; z-index: 1; }
+    </style>
+</head>
+<body class="bg-deep-blue text-white antialiased">
+
+    <!-- Reading progress bar -->
+    <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+
+    <!-- Cosmic background -->
+    <div class="cosmic-background">
+        <div class="light-streak"></div>
+        <div class="light-streak"></div>
+        <div class="light-streak"></div>
+    </div>
+
+    <div class="content-wrapper">
+
+        <header>
+        <!-- Navbar -->
+        <nav class="glass fixed top-0 left-0 right-0 z-50" aria-label="Main navigation">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <a href="/en/" class="flex items-center space-x-2" aria-label="Magyar IPTV Pro - home">
+                        <svg class="w-8 h-8 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="mipLogoBlogEnHeader" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#06b6d4"/>
+                                    <stop offset=".55" stop-color="#3b82f6"/>
+                                    <stop offset="1" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="32" height="32" rx="9" fill="url(#mipLogoBlogEnHeader)"/>
+                            <path d="M11.5 11.2 19.8 16 11.5 20.8Z" fill="#fff" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+                            <path d="M22.2 12.3a5.6 5.6 0 0 1 0 7.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round" opacity=".8"/>
+                        </svg>
+                        <span class="text-xl font-bold gradient-text">Magyar IPTV Pro</span>
+                    </a>
+
+                    <div class="flex items-center space-x-4">
+                        <a href="/en/guides.html" class="text-sm font-medium text-gray-300 hover:text-cyan-accent transition-colors">Guides</a>
+                        <a href="/en/blog.html" aria-current="page" class="text-sm font-medium text-gray-300 hover:text-cyan-accent transition-colors">Blog</a>
+                        <a href="/blog.html" hreflang="hu" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Magyar</a>
+                        <a href="/en/#contact" class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-cyan-accent to-blue-accent rounded-lg hover:shadow-lg transition-all">
+                            24/7 Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <main id="main" class="pt-24">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+                <ol class="flex items-center flex-wrap text-sm text-gray-400 gap-2">
+                    <li><a href="/en/" class="hover:text-cyan-accent transition-colors">Home</a></li>
+                    <li aria-hidden="true">/</li>
+                    <li class="text-gray-300" aria-current="page">Troubleshooting guide</li>
+                </ol>
+            </nav>
+
+            <!-- Hero -->
+            <section class="pt-10 pb-12 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <span class="section-eyebrow">Troubleshooting</span>
+                    <h1 class="font-black mt-4 mb-6" style="font-size:clamp(2rem,6vw,3.5rem); line-height:1.08; letter-spacing:-0.02em;">
+                        <span class="gradient-text">Magyar IPTV</span> Troubleshooting Guide 2026
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto" style="line-height:1.6;">
+                        Picture freezing, login refused, or slow channel switching? This guide walks you through every common issue, from the fastest fixes to the advanced settings — so your Magyar IPTV experience is flawless again.
+                    </p>
+                    <p class="text-sm text-gray-500 mt-6">Updated: July 19, 2026 · Magyar IPTV Pro support team · 8 min read</p>
+                </div>
+            </section>
+
+            <!-- Quick navigation -->
+            <section class="pb-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <nav class="glass-card rounded-2xl p-6 sm:p-7" aria-label="Quick navigation">
+                        <h2 class="text-lg font-bold mb-4">Quick navigation</h2>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+                            <li><a href="#quick-fixes" class="text-cyan-accent hover:text-blue-accent transition-colors">1. Quick fixes</a></li>
+                            <li><a href="#buffering" class="text-cyan-accent hover:text-blue-accent transition-colors">2. Buffering &amp; freezing</a></li>
+                            <li><a href="#login" class="text-cyan-accent hover:text-blue-accent transition-colors">3. Login problems</a></li>
+                            <li><a href="#vpn" class="text-cyan-accent hover:text-blue-accent transition-colors">4. VPN setup guide</a></li>
+                            <li><a href="#players" class="text-cyan-accent hover:text-blue-accent transition-colors">5. Recommended players</a></li>
+                            <li><a href="#faq" class="text-cyan-accent hover:text-blue-accent transition-colors">6. FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- 1. Quick fixes -->
+            <section id="quick-fixes" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">1. Quick fixes — start here</h2>
+                        <p class="text-gray-400 mb-6">In our experience roughly 80% of reported issues are solved by the four steps below, in under five minutes. Before trying anything more complex, work through these in order.</p>
+
+                        <div class="space-y-5">
+                            <div class="flex items-start gap-4">
+                                <span class="step-number" aria-hidden="true">1</span>
+                                <div>
+                                    <h3 class="font-bold text-white mb-1">Restart your modem and router</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">Unplug the device from the mains, wait a full <strong class="text-white">30 seconds</strong>, then plug it back in. This clears its memory and requests a fresh route from your provider. It sounds trivial, yet it resolves most sudden freezing.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="step-number" aria-hidden="true">2</span>
+                                <div>
+                                    <h3 class="font-bold text-white mb-1">Measure your real speed on Fast.com</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">Test on the same device you want to watch on. Target figures: <strong class="text-white">15 Mbps</strong> for stable HD, <strong class="text-white">30 Mbps</strong> for 4K. If you are below that, the bottleneck is your internet connection, not the Magyar IPTV service.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="step-number" aria-hidden="true">3</span>
+                                <div>
+                                    <h3 class="font-bold text-white mb-1">Switch to the 5 GHz WiFi band</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">The 2.4 GHz band is crowded and slower. In your router settings, select the <strong class="text-white">5 GHz</strong> network. The most stable option remains a <strong class="text-white">wired (ethernet)</strong> connection — if there is a socket near the TV, use it.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="step-number" aria-hidden="true">4</span>
+                                <div>
+                                    <h3 class="font-bold text-white mb-1">Try the TiviMate player</h3>
+                                    <p class="text-gray-400 text-sm leading-relaxed">The players built into TVs often use a weak buffer. <a href="tivimate-setup.html" class="text-cyan-accent hover:text-blue-accent underline">TiviMate</a> offers a far better decoder and pre-loading — in many cases this alone eliminates the buffering.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            If this doesn't help, message Magyar IPTV Pro support on WhatsApp!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Buffering -->
+            <section id="buffering" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">2. Eliminating buffering and freezing</h2>
+                        <p class="text-gray-400 mb-6">Buffering almost always comes down to one of three causes: the player, the network route, or the load on your device. Let's go through all three.</p>
+
+                        <h3 class="font-bold text-white mb-2">The player is the single biggest factor</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">The same stream can freeze in one app and run perfectly in another. TiviMate maintains a larger buffer and decodes more efficiently, which is why we recommend it first on Android TV, Google TV and Firestick. In its settings, set the <strong class="text-white">buffer size</strong> to medium or large if your connection fluctuates.</p>
+
+                        <h3 class="font-bold text-white mb-2">When your provider slows down video traffic</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">Some internet providers throttle high-bandwidth video traffic during peak hours. The tell-tale sign: everything freezes between 8 and 11 pm, yet is flawless during the day. In that case the encrypted tunnel of a VPN often smooths the picture out — more on that in the <a href="#vpn" class="text-cyan-accent hover:text-blue-accent underline">VPN section</a>.</p>
+
+                        <h3 class="font-bold text-white mb-2">Optimising the device</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-400 text-sm mb-2">
+                            <li>Close background apps — cheaper Android boxes run out of memory quickly.</li>
+                            <li>Clear the player's cache once a month.</li>
+                            <li>Turn off your TV's "picture enhancement" post-processing, which can add latency.</li>
+                            <li>If several people watch at once, check whether your plan allows simultaneous connections.</li>
+                        </ul>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            If this doesn't help, message Magyar IPTV Pro support on WhatsApp!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Login -->
+            <section id="login" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">3. Fixing login problems</h2>
+                        <p class="text-gray-400 mb-6">If the app returns "Invalid credentials", "Authorization failed" or something similar, it is almost always one of the four causes below.</p>
+
+                        <h3 class="font-bold text-white mb-2">Check your credentials character by character</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">The most common mistake is a <strong class="text-white">trailing space</strong> left over from copying, or a mistyped upper/lower-case letter. Enter the Server URL, Username and Password exactly as you received them on WhatsApp — including the trailing slash if there is one.</p>
+
+                        <h3 class="font-bold text-white mb-2">Check your subscription status</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">An expired subscription returns the very same error message from the server. If you are unsure about your expiry date, one message to our team clears it up immediately.</p>
+
+                        <h3 class="font-bold text-white mb-2">Try it with a VPN</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">If your details are definitely correct but the connection still fails, your provider's routing may be getting in the way. Switching on a VPN quickly rules that possibility in or out.</p>
+
+                        <h3 class="font-bold text-white mb-2">Clear the cache, or reinstall</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-2">Corrupted local data causes stubborn login errors. In your device settings, clear the app's cache, then add the playlist again. As a last resort, reinstall the app — your Magyar IPTV access is not lost in the process.</p>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            If this doesn't help, message Magyar IPTV Pro support on WhatsApp!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. VPN -->
+            <section id="vpn" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">4. VPN setup guide</h2>
+                        <p class="text-gray-400 mb-6">A VPN solves two specific problems: it encrypts your traffic so your provider cannot selectively slow video down, and it can give you a steadier route when network routing is poor. It is useful for privacy too.</p>
+
+                        <h3 class="font-bold text-white mb-2">Which VPN do we recommend?</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5"><strong class="text-white">ProtonVPN</strong> is our favourite: Swiss jurisdiction, independently audited no-log policy, and a free tier with unlimited data so you can test at no risk whether provider throttling really is your problem.</p>
+
+                        <h3 class="font-bold text-white mb-2">Step-by-step setup</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-400 text-sm mb-5">
+                            <li>Install the ProtonVPN app from your device's store (Google Play, App Store, Amazon Appstore).</li>
+                            <li>Create an account and sign in.</li>
+                            <li>Pick a <strong class="text-white">geographically close server</strong> — Hungary, Austria or Slovakia give the lowest latency.</li>
+                            <li>Connect, then restart your player so it builds a fresh connection.</li>
+                            <li>Re-test your speed on Fast.com: a good VPN should cost you no more than a few percent.</li>
+                        </ol>
+
+                        <p class="text-gray-400 text-sm leading-relaxed mb-2"><strong class="text-white">Tip:</strong> if the VPN makes your connection <em>slower</em>, try another server. A distant server (overseas, for example) always degrades picture quality.</p>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            If this doesn't help, message Magyar IPTV Pro support on WhatsApp!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Players -->
+            <section id="players" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-black mb-3">5. Recommended players</h2>
+                        <p class="text-gray-400 mb-6">Choosing the right app is the single biggest quality jump available to you. Here are the three we recommend to Magyar IPTV Pro customers.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                            <div class="glass rounded-xl p-5">
+                                <h3 class="font-bold text-white mb-2">TiviMate</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">The best choice on Android TV, Google TV and Firestick. Lightning-fast channel switching, full EPG guide, favourite lists. <a href="tivimate-setup.html" class="text-cyan-accent hover:text-blue-accent underline">Setup guide</a>.</p>
+                            </div>
+                            <div class="glass rounded-xl p-5">
+                                <h3 class="font-bold text-white mb-2">IPTV Smarters Pro</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">The most versatile: runs on Android, iOS, Windows and Smart TVs. If you own several different devices, this is the easiest common denominator. <a href="iptv-smarters-pro-setup.html" class="text-cyan-accent hover:text-blue-accent underline">Setup guide</a>.</p>
+                            </div>
+                            <div class="glass rounded-xl p-5">
+                                <h3 class="font-bold text-white mb-2">VLC</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">An excellent <strong class="text-white">diagnostic tool</strong> on PC and Mac: if a stream plays in VLC but not on your TV, the fault is with the device or the player, not with the service.</p>
+                            </div>
+                        </div>
+
+                        <p class="section-cta rounded-lg p-4 mt-7 text-sm text-gray-300">
+                            If this doesn't help, message Magyar IPTV Pro support on WhatsApp!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. FAQ -->
+            <section id="faq" class="py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-8">
+                        <span class="section-eyebrow">FAQ</span>
+                        <h2 class="section-title font-black mt-2">Frequently asked <span class="gradient-text">questions</span></h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <details class="glass-card rounded-xl p-6 group">
+                            <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                                <span>Why does my Magyar IPTV stream only freeze in the evening?</span>
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-gray-400">That is typically peak-hour network congestion or throttling by your provider. First measure your speed around 9 pm, then try the same test with a VPN — if the VPN fixes it, throttling was the cause.</p>
+                        </details>
+
+                        <details class="glass-card rounded-xl p-6 group">
+                            <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                                <span>How stable is the service during live sport?</span>
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-gray-400">Our servers use load balancing precisely because of high-audience events. In practice, quality is decided at the viewer's end: with a wired connection and the TiviMate player, the Magyar IPTV experience is markedly more stable than with a built-in TV app over WiFi.</p>
+                        </details>
+
+                        <details class="glass-card rounded-xl p-6 group">
+                            <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                                <span>Will I lose my access if I reinstall the app?</span>
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-gray-400">No. Your access is tied to your account, not to the app. After reinstalling, simply enter the Server URL, Username and Password again. If you can't find them, we'll resend them on WhatsApp.</p>
+                        </details>
+
+                        <details class="glass-card rounded-xl p-6 group">
+                            <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                                <span>Is a VPN required to use Magyar IPTV?</span>
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform flex-shrink-0 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <p class="mt-4 text-gray-400">Not at all — most of our customers use the service without one. It is worth switching on if your provider demonstrably throttles video traffic, or if you simply want extra privacy.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Need help -->
+            <section id="help" class="py-16 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass-card rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden">
+                        <div class="absolute -top-24 -right-24 w-64 h-64 bg-cyan-accent rounded-full blur-3xl opacity-20" aria-hidden="true"></div>
+                        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-accent rounded-full blur-3xl opacity-20" aria-hidden="true"></div>
+                        <div class="relative">
+                            <span class="section-eyebrow">Need help?</span>
+                            <h2 class="section-title font-black mt-2 mb-5">
+                                Our team replies <span class="gradient-text">within 2 minutes</span>
+                            </h2>
+                            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                                You don't have to struggle with it alone. Tell us which device you use and what you're seeing — Magyar IPTV Pro support will walk you through the fix, and set it up remotely if needed.
+                            </p>
+                            <a href="/en/#contact" data-wa-message="Hi! I've been reading the Magyar IPTV Pro troubleshooting guide and I need some help. Here is the device I use and the problem I'm seeing:" class="js-whatsapp-cta inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-bold text-lg sm:text-xl text-white shadow-2xl transition-all hover:scale-105" aria-label="Message Magyar IPTV Pro support on WhatsApp">
+                                <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                Message us on WhatsApp
+                            </a>
+                            <p class="mt-6 text-sm text-gray-400">Available 24/7 · Remote setup at no charge</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-card-border">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="mipLogoBlogEnFooter" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06b6d4"/>
+                                        <stop offset=".55" stop-color="#3b82f6"/>
+                                        <stop offset="1" stop-color="#8b5cf6"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="32" height="32" rx="9" fill="url(#mipLogoBlogEnFooter)"/>
+                                <path d="M11.5 11.2 19.8 16 11.5 20.8Z" fill="#fff" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+                                <path d="M22.2 12.3a5.6 5.6 0 0 1 0 7.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round" opacity=".8"/>
+                            </svg>
+                            <span class="font-bold gradient-text">Magyar IPTV Pro</span>
+                        </div>
+                        <p class="text-sm text-gray-400">
+                            Premium IPTV service for Hungary. 4K quality, more than 10,000+ live channels, and rock-solid stability.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold mb-4">Quick links</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="/en/" class="hover:text-cyan-accent transition-colors">Home</a></li>
+                            <li><a href="/en/#pricing" class="hover:text-cyan-accent transition-colors">Pricing</a></li>
+                            <li><a href="/en/#faq" class="hover:text-cyan-accent transition-colors">FAQ</a></li>
+                            <li><a href="/en/#contact" class="hover:text-cyan-accent transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold mb-4">Support</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="blog.html" class="hover:text-cyan-accent transition-colors">Troubleshooting guide</a></li>
+                            <li><a href="guides.html" class="hover:text-cyan-accent transition-colors">Guides</a></li>
+                            <li><a href="install-guide.html" class="hover:text-cyan-accent transition-colors">Installation Guide</a></li>
+                            <li><a href="tivimate-setup.html" class="hover:text-cyan-accent transition-colors">TiviMate Setup</a></li>
+                            <li><a href="ibo-vs-tivimate.html" class="hover:text-cyan-accent transition-colors">IBO vs TiviMate</a></li>
+                            <li><a href="/en/terms.html" class="hover:text-cyan-accent transition-colors">Terms &amp; Conditions</a></li>
+                            <li><a href="/en/privacy.html" class="hover:text-cyan-accent transition-colors">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold mb-4">Contact</h4>
+                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <span class="text-gray-500">coming soon</span></p>
+                        <p class="text-sm text-gray-400 mb-4">Email: <a href="mailto:contact@magyariptvpro.com" class="hover:text-cyan-accent transition-colors">contact@magyariptvpro.com</a></p>
+                        <p class="text-xs text-gray-500">Available 24/7 for support</p>
+                    </div>
+                </div>
+
+                <div class="pt-8 border-t border-card-border text-center text-sm text-gray-500">
+                    <p>&copy; 2026 Magyar IPTV Pro. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Sticky WhatsApp Button -->
+    <a id="stickyWhatsAppBtn" href="/en/#contact" data-wa-message="Hi! I'm reading the Magyar IPTV troubleshooting guide and I need some help." class="js-whatsapp-cta whatsapp-sticky flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-full font-semibold shadow-2xl transition-all hover:scale-110" aria-label="Message us on WhatsApp">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span class="hidden sm:inline">Message us</span>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // CONFIG — single source of truth for the WhatsApp tunnel (English defaults)
+        const CONFIG = {
+            phoneNumber: '19297186779',
+            phoneDisplay: '+1 929 718 6779',
+            message: 'Hi! I would like more information about the premium IPTV service.'
+        };
+
+        function buildWhatsAppUrl(message) {
+            if (!CONFIG.phoneNumber) return '';
+            const text = (message && message.trim()) ? message : CONFIG.message;
+            return `https://wa.me/${CONFIG.phoneNumber}?text=${encodeURIComponent(text)}`;
+        }
+
+        function preventDisabledClick(e) {
+            if (this.classList.contains('cta-disabled')) e.preventDefault();
+        }
+
+        function initWhatsApp() {
+            const footerWhatsApp = document.getElementById('footerWhatsApp');
+            if (footerWhatsApp && CONFIG.phoneDisplay) {
+                footerWhatsApp.innerHTML = `WhatsApp: <a href="${buildWhatsAppUrl()}" class="text-white hover:text-cyan-accent transition-colors font-medium">${CONFIG.phoneDisplay}</a>`;
+            }
+
+            const ctaButtons = document.querySelectorAll('.js-whatsapp-cta');
+            ctaButtons.forEach(btn => {
+                if (!CONFIG.phoneNumber) {
+                    btn.classList.add('cta-disabled');
+                    btn.href = '#';
+                    btn.addEventListener('click', preventDisabledClick);
+                    return;
+                }
+                const customMessage = btn.getAttribute('data-wa-message');
+                btn.href = buildWhatsAppUrl(customMessage);
+                btn.setAttribute('target', '_blank');
+                btn.setAttribute('rel', 'noopener noreferrer');
+                btn.addEventListener('click', preventDisabledClick);
+            });
+        }
+
+        function initReadingProgressBar() {
+            const progressIndicator = document.getElementById('readingProgress');
+            if (!progressIndicator) return;
+
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                if (totalHeight <= 0) {
+                    progressIndicator.style.width = '0%';
+                    return;
+                }
+                const progress = (window.scrollY / totalHeight) * 100;
+                progressIndicator.style.width = `${progress}%`;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initWhatsApp();
+            initReadingProgressBar();
+        });
+    </script>
+</body>
+</html>

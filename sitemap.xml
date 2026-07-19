@@ -163,4 +163,26 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/guides.html" />
     </url>
 
+    <!-- Troubleshooting blog (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/blog.html</loc>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/blog.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/blog.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/blog.html" />
+    </url>
+
+    <!-- Troubleshooting blog (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/blog.html</loc>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/blog.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/blog.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/blog.html" />
+    </url>
+
 </urlset>
