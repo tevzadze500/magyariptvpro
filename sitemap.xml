@@ -5,8 +5,10 @@
     <!--
         Magyar IPTV Pro - XML Sitemap
         SEO focus: indexable money/long-tail pages only — homepage, installation
-        guide and the setup articles (HU + EN silo, paired via hreflang). Legal
-        pages (terms.html, privacy.html) and error.html are noindex and excluded.
+        guide, the setup articles and the trust pages (about, contact, FAQ,
+        refund), HU + EN silo, paired via hreflang. Legal pages (terms.html,
+        privacy.html), the copyright notice (szerzoi-jogok.html / en/dmca.html)
+        and error.html are noindex and excluded.
     -->
 
     <!-- Homepage (Hungarian) + EN alternate -->
@@ -183,6 +185,94 @@
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/blog.html" />
         <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/blog.html" />
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/blog.html" />
+    </url>
+
+    <!-- FAQ hub (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/gyik.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/gyik.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/faq.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/faq.html" />
+    </url>
+
+    <!-- FAQ hub (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/faq.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/gyik.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/faq.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/faq.html" />
+    </url>
+
+    <!-- About us (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/rolunk.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/rolunk.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/about.html" />
+    </url>
+
+    <!-- About us (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/about.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/rolunk.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/about.html" />
+    </url>
+
+    <!-- Contact (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/kapcsolat.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/kapcsolat.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/contact.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/contact.html" />
+    </url>
+
+    <!-- Contact (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/contact.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/kapcsolat.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/contact.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/contact.html" />
+    </url>
+
+    <!-- Refund policy (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/visszaterites.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/visszaterites.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/refund-policy.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/refund-policy.html" />
+    </url>
+
+    <!-- Refund policy (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/refund-policy.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/visszaterites.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/refund-policy.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/refund-policy.html" />
     </url>
 
 </urlset>
