@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: Replace with a 1200x630 raster JPG for best Facebook/WhatsApp preview support. -->
+<!-- Source de design. Le rendu servi aux reseaux sociaux est og-image.png (1200x630).
+     Regenerer avec : resvg --width 1200 --height 630 og-image.svg og-image.png -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
