@@ -38,7 +38,7 @@
 
     <!-- JSON-LD: WebSite -->
     <script type="application/ld+json">
-    {
+{
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Magyar IPTV Pro",
@@ -47,37 +47,45 @@
         "inLanguage": "en",
         "description": "Premium IPTV service in Hungary with 10,000+ live channels, movies, and series in ultra HD/4K quality.",
         "publisher": {
-            "@type": "Organization",
-            "name": "Magyar IPTV Pro",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://magyariptvpro.com/logo.svg"
-            }
+                "@type": "Organization",
+                "@id": "https://magyariptvpro.com/#organization",
+                "name": "Magyar IPTV Pro",
+                "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://magyariptvpro.com/logo.svg"
+                }
         }
-    }
+}
     </script>
 
     <!-- JSON-LD: Organization -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
+{
         "@type": "Organization",
+        "@id": "https://magyariptvpro.com/#organization",
+        "@context": "https://schema.org",
         "name": "Magyar IPTV Pro",
         "url": "https://magyariptvpro.com/",
         "logo": "https://magyariptvpro.com/logo.svg",
         "description": "Premium IPTV service for Hungary — over 10,000+ live channels in ultra HD/4K quality, high stability, and instant WhatsApp activation.",
         "areaServed": {
-            "@type": "Country",
-            "name": "Hungary"
+                "@type": "Country",
+                "name": "Hungary"
         },
         "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "availableLanguage": ["English", "Hungarian"],
-            "areaServed": "HU",
-            "email": "contact@magyariptvpro.com"
-        }
-    }
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "availableLanguage": [
+                        "English",
+                        "Hungarian"
+                ],
+                "areaServed": "HU",
+                "email": "contact@magyariptvpro.com"
+        },
+        "sameAs": [
+                "https://www.facebook.com/people/Magyar-IPTV-Pro/61593230694763/"
+        ]
+}
     </script>
 
     <!-- JSON-LD: FAQPage -->

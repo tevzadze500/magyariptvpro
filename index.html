@@ -603,7 +603,7 @@
 
     <!-- Structured Data: WebSite -->
     <script type="application/ld+json">
-    {
+{
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Magyar IPTV Pro",
@@ -611,36 +611,43 @@
         "inLanguage": "hu",
         "description": "Prémium magyar IPTV szolgáltatás Ultra 4K minőségben, több mint 10 000+ élő csatornával. Pufferelés nélkül, azonnali aktiválás WhatsApp-on.",
         "publisher": {
-            "@type": "Organization",
-            "name": "Magyar IPTV Pro",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://magyariptvpro.com/logo.svg"
-            }
+                "@type": "Organization",
+                "@id": "https://magyariptvpro.com/#organization",
+                "name": "Magyar IPTV Pro",
+                "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://magyariptvpro.com/logo.svg"
+                }
         }
-    }
+}
     </script>
 
     <!-- Structured Data: Organization -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
+{
         "@type": "Organization",
+        "@id": "https://magyariptvpro.com/#organization",
+        "@context": "https://schema.org",
         "name": "Magyar IPTV Pro",
         "url": "https://magyariptvpro.com/",
         "logo": "https://magyariptvpro.com/logo.svg",
         "description": "Magyar IPTV Pro szolgáltatás Magyarországon, több mint 10 000+ élő csatornával 4K minőségben.",
         "areaServed": {
-            "@type": "Country",
-            "name": "Hungary"
+                "@type": "Country",
+                "name": "Hungary"
         },
         "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "availableLanguage": ["Hungarian"],
-            "areaServed": "HU"
-        }
-    }
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "availableLanguage": [
+                        "Hungarian"
+                ],
+                "areaServed": "HU"
+        },
+        "sameAs": [
+                "https://www.facebook.com/people/Magyar-IPTV-Pro/61593230694763/"
+        ]
+}
     </script>
 
     <!-- Structured Data: FAQ -->
