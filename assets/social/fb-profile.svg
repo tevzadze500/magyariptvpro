@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Photo de profil Facebook — 1024x1024, recadrée en cercle par Facebook.
+     Fond dégradé pleine page pour que le cercle n'affiche aucun bord.
+     Rendu : resvg (options width/height 1024) fb-profile.svg fb-profile.png -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="1024" height="1024">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06b6d4"/>
+      <stop offset=".55" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="32" height="32" fill="url(#g)"/>
+
+  <!-- Marque play + onde, recentrée (bbox d'origine centrée sur x=19.65) et agrandie -->
+  <g transform="translate(16,16) scale(1.28) translate(-19.65,-16)">
+    <path d="M11.5 11.2 19.8 16 11.5 20.8Z" fill="#fff" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M22.2 12.3a5.6 5.6 0 0 1 0 7.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".85"/>
+  </g>
+</svg>

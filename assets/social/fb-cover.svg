@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Photo de couverture Facebook — 1640x624 (2x de l'affichage bureau 820x312).
+     Contenu centré : le mobile recadre les côtés, et la photo de profil
+     recouvre le coin inférieur gauche sur bureau.
+     Rendu : resvg (options width 1640, height 624) fb-cover.svg fb-cover.png -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 624" width="1640" height="624">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="22%" cy="28%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="78%" cy="72%" r="55%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="60%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06b6d4"/>
+      <stop offset=".55" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1640" height="624" fill="url(#bg)"/>
+  <rect width="1640" height="624" fill="url(#glow1)"/>
+  <rect width="1640" height="624" fill="url(#glow2)"/>
+  <rect width="1640" height="624" fill="url(#glow3)"/>
+
+  <!-- Trame -->
+  <g stroke="#06b6d4" stroke-opacity="0.055" stroke-width="1">
+    <path d="M0 104 H1640 M0 208 H1640 M0 312 H1640 M0 416 H1640 M0 520 H1640"/>
+    <path d="M120 0 V624 M240 0 V624 M360 0 V624 M480 0 V624 M600 0 V624 M720 0 V624 M840 0 V624 M960 0 V624 M1080 0 V624 M1200 0 V624 M1320 0 V624 M1440 0 V624 M1560 0 V624"/>
+  </g>
+
+  <!-- Marque -->
+  <g transform="translate(372, 232) scale(4.1)">
+    <rect width="32" height="32" rx="9" fill="url(#mark)"/>
+    <path d="M11.5 11.2 19.8 16 11.5 20.8Z" fill="#fff" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M22.2 12.3a5.6 5.6 0 0 1 0 7.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".85"/>
+  </g>
+
+  <!-- Nom de marque -->
+  <text x="540" y="312" font-family="Inter, system-ui, sans-serif" font-size="86"
+        font-weight="900" fill="url(#txt)" letter-spacing="-1.5">Magyar IPTV Pro</text>
+
+  <!-- Accroche -->
+  <text x="546" y="372" font-family="Inter, system-ui, sans-serif" font-size="30"
+        font-weight="500" fill="#94a3b8" letter-spacing="1.5">MAGYAR TV BÁRHOL &#183; 4K ULTRA &#183; 0-24 SEGÍTSÉG</text>
+
+  <!-- Liseré bas -->
+  <rect x="0" y="614" width="1640" height="10" fill="url(#txt)"/>
+</svg>
