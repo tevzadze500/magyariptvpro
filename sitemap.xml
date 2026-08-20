@@ -297,4 +297,26 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-abroad.html" />
     </url>
 
+    <!-- Guide: Smart TV setup, Samsung and LG (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/smart-tv-iptv-beallitas.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/smart-tv-iptv-beallitas.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/smart-tv-iptv-setup.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/smart-tv-iptv-setup.html" />
+    </url>
+
+    <!-- Guide: Smart TV setup, Samsung and LG (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/smart-tv-iptv-setup.html</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/smart-tv-iptv-beallitas.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/smart-tv-iptv-setup.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/smart-tv-iptv-setup.html" />
+    </url>
+
 </urlset>
