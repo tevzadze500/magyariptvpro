@@ -76,34 +76,35 @@
                 "itemListOrder": "https://schema.org/ItemListOrderAscending",
                 "numberOfItems": 4,
                 "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Smart TV IPTV setup", "url": "https://magyariptvpro.com/en/smart-tv-iptv-setup.html" },
+                { "@type": "ListItem", "position": 1, "name": "Firestick and Android box IPTV setup", "url": "https://magyariptvpro.com/en/firestick-iptv-setup.html" },
+                { "@type": "ListItem", "position": 2, "name": "Smart TV IPTV setup", "url": "https://magyariptvpro.com/en/smart-tv-iptv-setup.html" },
                         {
                                 "@type": "ListItem",
-                                "position": 2,
+                                "position": 3,
                                 "name": "Watching Hungarian TV abroad",
                                 "url": "https://magyariptvpro.com/en/hungarian-tv-abroad.html"
                         },
                         {
                                 "@type": "ListItem",
-                                "position": 3,
+                                "position": 4,
                                 "name": "IBO Player Setup",
                                 "url": "https://magyariptvpro.com/en/ibo-player-setup.html"
                         },
                         {
                                 "@type": "ListItem",
-                                "position": 4,
+                                "position": 5,
                                 "name": "TiviMate Setup",
                                 "url": "https://magyariptvpro.com/en/tivimate-setup.html"
                         },
                         {
                                 "@type": "ListItem",
-                                "position": 5,
+                                "position": 6,
                                 "name": "IBO Player vs TiviMate",
                                 "url": "https://magyariptvpro.com/en/ibo-vs-tivimate.html"
                         },
                         {
                                 "@type": "ListItem",
-                                "position": 6,
+                                "position": 7,
                                 "name": "General Installation Guide",
                                 "url": "https://magyariptvpro.com/en/install-guide.html"
                         }
@@ -392,6 +393,21 @@
             <section class="pb-24 px-4 sm:px-6 lg:px-8">
                 <div class="max-w-6xl mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <!-- Card: Firestick / Android box -->
+                        <a href="%s" class="guide-card glass-card rounded-2xl p-7 flex flex-col group">
+                            <span class="section-eyebrow">%s</span>
+                            <h2 class="text-xl sm:text-2xl font-bold mt-2 mb-3 transition-colors">%s</h2>
+                            <p class="text-gray-400 text-sm leading-relaxed flex-grow">
+                                %s
+                            </p>
+                            <span class="mt-5 inline-flex items-center gap-2 text-cyan-accent font-semibold text-sm">
+                                %s
+                                <svg class="guide-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </span>
+                        </a>
 
                         <!-- Card: Smart TV Samsung / LG -->
                         <a href="/en/smart-tv-iptv-setup.html" class="guide-card glass-card rounded-2xl p-7 flex flex-col group">
