@@ -14,7 +14,7 @@
     <!-- Homepage (Hungarian) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/" />
@@ -25,7 +25,7 @@
     <!-- Homepage (English silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/" />
@@ -146,7 +146,7 @@
     <!-- Guides hub / blog (HU) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/utmutatok.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/utmutatok.html" />
@@ -157,7 +157,7 @@
     <!-- Guides hub / blog (EN silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/guides.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/utmutatok.html" />
@@ -168,7 +168,7 @@
     <!-- Troubleshooting blog (HU) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/blog.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/blog.html" />
@@ -179,7 +179,7 @@
     <!-- Troubleshooting blog (EN silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/blog.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/blog.html" />
@@ -278,7 +278,7 @@
     <!-- Guide: watching Hungarian TV abroad (HU) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/magyar-tv-kulfoldon.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-kulfoldon.html" />
@@ -289,7 +289,7 @@
     <!-- Guide: watching Hungarian TV abroad (EN silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/hungarian-tv-abroad.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-kulfoldon.html" />
@@ -344,7 +344,7 @@
     <!-- Guide: RTL Klub abroad (HU) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/rtl-klub-nezese-kulfoldon.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/rtl-klub-nezese-kulfoldon.html" />
@@ -355,7 +355,7 @@
     <!-- Guide: RTL Klub abroad (EN silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/rtl-klub-abroad.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/rtl-klub-nezese-kulfoldon.html" />
@@ -366,7 +366,7 @@
     <!-- Guide: Hungarian TV in Austria (HU + EN alternate) -->
     <url>
         <loc>https://magyariptvpro.com/magyar-tv-ausztriaban.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-ausztriaban.html" />
@@ -377,12 +377,34 @@
     <!-- Guide: Hungarian TV in Austria (EN silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/hungarian-tv-austria.html</loc>
-        <lastmod>2026-09-27</lastmod>
+        <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-ausztriaban.html" />
         <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-austria.html" />
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-austria.html" />
+    </url>
+
+    <!-- Guide: Hungarian TV in Germany (HU + EN alternate) -->
+    <url>
+        <loc>https://magyariptvpro.com/magyar-tv-nemetorszagban.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-nemetorszagban.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-germany.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-germany.html" />
+    </url>
+
+    <!-- Guide: Hungarian TV in Germany (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/hungarian-tv-germany.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-nemetorszagban.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-germany.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-germany.html" />
     </url>
 
 </urlset>
