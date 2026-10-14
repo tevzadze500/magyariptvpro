@@ -11,7 +11,6 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#020617">
 
-    <!-- TODO: cseréld az magyariptvpro.com placeholdert a valódi domainre ebben a fájlban, az install-guide.html oldalon és a sitemap.xml-ben -->
     <link rel="canonical" href="https://magyariptvpro.com/">
     <link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/">
     <link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/">
@@ -271,49 +270,6 @@
             border-radius: 5px;
         }
 
-        /* Auto-scroll carousel for VOD */
-        @keyframes scroll-left {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .auto-scroll {
-            animation: scroll-left 40s linear infinite;
-        }
-
-        .auto-scroll:hover {
-            animation-play-state: paused;
-        }
-
-        /* Movie poster with star rating */
-        .movie-poster {
-            position: relative;
-            transition: all 0.3s ease;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .movie-poster:hover {
-            transform: scale(1.08);
-            box-shadow: 0 0 40px rgba(6, 182, 212, 0.8);
-        }
-
-        .star-rating {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            background: linear-gradient(135deg, #FCD116 0%, #FFAA00 100%);
-            color: #000;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-weight: bold;
-            font-size: 12px;
-            box-shadow: 0 2px 8px rgba(252, 209, 22, 0.4);
-            display: flex;
-            align-items: center;
-            gap: 2px;
-        }
-
         /* Sticky WhatsApp Button */
         .whatsapp-sticky {
             position: fixed;
@@ -405,7 +361,6 @@
                 transition-duration: 0.01ms !important;
                 scroll-behavior: auto !important;
             }
-            .auto-scroll,
             .cosmic-background::before,
             .cosmic-background::after,
             .light-streak,
@@ -701,7 +656,7 @@
                 "name": "Hogyan tudom kifizetni az előfizetést?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "A fizetés 100%-ban biztonságos. Ha elégedett vagy az ingyenes teszttel, egy hivatalos PayPal számlát küldünk, amelyet kényelmesen kiegyenlíthetsz."
+                    "text": "A fizetés 100%-ban biztonságos. Ha elégedett vagy az ingyenes teszttel, PayPal fizetési kérelmet küldünk, amelyet kényelmesen kiegyenlíthetsz."
                 }
             },
             {
@@ -728,13 +683,6 @@
             "name": "Magyar IPTV Pro"
         },
         "image": "https://magyariptvpro.com/og-image.png",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "38",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
         "review": [
             {
                 "@type": "Review",
@@ -1197,7 +1145,7 @@
                     <h2 class="section-title font-black mt-2">
                         Válaszd ki az IPTV <span class="gradient-text">előfizetésed</span>
                     </h2>
-                    <p class="text-lg text-gray-400 mt-4">Átlátható árak · ÁFA-val · Azonnali aktiválás.</p>
+                    <p class="text-lg text-gray-400 mt-4">Átlátható árak · Azonnali aktiválás.</p>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
@@ -1414,148 +1362,6 @@
             </p>
         </section>
 
-        <!-- VOD Section -->
-        <section class="py-20 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-7xl mx-auto">
-                <!-- VOD Section with High-Definition Movie Posters -->
-                <div class="mb-20">
-                    <div class="flex justify-between items-center mb-8">
-                        <h2 class="text-3xl sm:text-4xl font-black">
-                            Filmek és Sorozatok <span class="gradient-text">2025/2026</span>
-                        </h2>
-                        <a href="#contact" class="text-cyan-accent hover:text-blue-accent transition-colors font-semibold">
-                            Összes megtekintése <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-
-                    <!-- Auto-Scroll Carousel with Movie Posters -->
-                    <div class="overflow-hidden pb-4">
-                        <div class="flex space-x-4 auto-scroll" style="width: max-content;">
-                            <!-- Movie Poster 1: The Batman 2 -->
-                            <div class="w-48 flex-shrink-0 group cursor-pointer">
-                                <div class="movie-poster relative mb-3">
-                                    <div class="aspect-[2/3] bg-gradient-to-br from-gray-900 via-slate-800 to-black flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/qLkQjmZFrRZKN7KKP1NmFXLVPH3.jpg" alt="The Batman 2" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                                        <div class="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">The Batman 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">⭐ 8.7</div>
-                                </div>
-                                <p class="text-sm font-semibold">The Batman 2</p>
-                                <p class="text-xs text-gray-500">2026 • Akció</p>
-                            </div>
-
-                            <!-- Movie Poster 2: Deadpool 3 -->
-                            <div class="w-48 flex-shrink-0 group cursor-pointer">
-                                <div class="movie-poster relative mb-3">
-                                    <div class="aspect-[2/3] bg-gradient-to-br from-red-900 via-red-800 to-yellow-900 flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/4yrOyO3N55XazHQXXYoqiiPQd40.jpg" alt="Deadpool 3" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                                        <div class="w-full h-full bg-gradient-to-br from-red-900 to-yellow-900 flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">Deadpool 3</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">⭐ 8.8</div>
-                                </div>
-                                <p class="text-sm font-semibold">Deadpool 3</p>
-                                <p class="text-xs text-gray-500">2025 • Vígjáték</p>
-                            </div>
-
-                            <!-- Movie Poster 3: Dune: Part Three -->
-                            <div class="w-48 flex-shrink-0 group cursor-pointer">
-                                <div class="movie-poster relative mb-3">
-                                    <div class="aspect-[2/3] bg-gradient-to-br from-amber-900 via-orange-900 to-yellow-800 flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg" alt="Dune: Part Three" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                                        <div class="w-full h-full bg-gradient-to-br from-purple-900 to-pink-900 flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">Dune: Part Three</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">⭐ 8.9</div>
-                                </div>
-                                <p class="text-sm font-semibold">Dune: Part Three</p>
-                                <p class="text-xs text-gray-500">2026 • Sci-Fi</p>
-                            </div>
-
-                            <!-- Movie Poster 4: Avatar 3 -->
-                            <div class="w-48 flex-shrink-0 group cursor-pointer">
-                                <div class="movie-poster relative mb-3">
-                                    <div class="aspect-[2/3] bg-gradient-to-br from-blue-900 via-cyan-800 to-teal-900 flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" alt="Avatar 3" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                                        <div class="w-full h-full bg-gradient-to-br from-blue-900 to-cyan-900 flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">Avatar 3</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">⭐ 9.2</div>
-                                </div>
-                                <p class="text-sm font-semibold">Avatar 3</p>
-                                <p class="text-xs text-gray-500">2025 • Kaland</p>
-                            </div>
-
-                            <!-- Movie Poster 5: Mission Impossible 8 -->
-                            <div class="w-48 flex-shrink-0 group cursor-pointer">
-                                <div class="movie-poster relative mb-3">
-                                    <div class="aspect-[2/3] bg-gradient-to-br from-gray-900 via-red-900 to-orange-900 flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/qh1i3kL6lp7BmOlkKDLB5EzMWpI.jpg" alt="Mission Impossible 8" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                                        <div class="w-full h-full bg-gradient-to-br from-red-900 to-orange-900 flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">Mission Impossible 8</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">⭐ 8.5</div>
-                                </div>
-                                <p class="text-sm font-semibold">Mission Impossible 8</p>
-                                <p class="text-xs text-gray-500">2025 • Akció</p>
-                            </div>
-
-                            <!-- Movie Poster 6: Spider-Man 4 -->
-                            <div class="w-48 flex-shrink-0 group cursor-pointer">
-                                <div class="movie-poster relative mb-3">
-                                    <div class="aspect-[2/3] bg-gradient-to-br from-red-900 via-blue-900 to-purple-900 flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="Spider-Man 4" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                                        <div class="w-full h-full bg-gradient-to-br from-indigo-900 to-purple-900 flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">Spider-Man 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">⭐ 9.0</div>
-                                </div>
-                                <p class="text-sm font-semibold">Spider-Man 4</p>
-                                <p class="text-xs text-gray-500">2026 • Akció</p>
-                            </div>
-
-                            <!-- Duplicate for infinite scroll -->
-                            <div class="w-48 flex-shrink-0 group cursor-pointer">
-                                <div class="movie-poster relative mb-3">
-                                    <div class="aspect-[2/3] bg-gradient-to-br from-gray-900 via-slate-800 to-black flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/qLkQjmZFrRZKN7KKP1NmFXLVPH3.jpg" alt="The Batman 2" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                                        <div class="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">The Batman 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">⭐ 8.7</div>
-                                </div>
-                                <p class="text-sm font-semibold">The Batman 2</p>
-                                <p class="text-xs text-gray-500">2026 • Akció</p>
-                            </div>
-
-                            <div class="w-48 flex-shrink-0 group cursor-pointer">
-                                <div class="movie-poster relative mb-3">
-                                    <div class="aspect-[2/3] bg-gradient-to-br from-red-900 via-red-800 to-yellow-900 flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/4yrOyO3N55XazHQXXYoqiiPQd40.jpg" alt="Deadpool 3" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                                        <div class="w-full h-full bg-gradient-to-br from-red-900 to-yellow-900 flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">Deadpool 3</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">⭐ 8.8</div>
-                                </div>
-                                <p class="text-sm font-semibold">Deadpool 3</p>
-                                <p class="text-xs text-gray-500">2025 • Vígjáték</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
         <hr class="section-divider" />
 
         <!-- Testimonials Section -->
@@ -1566,7 +1372,6 @@
                     <h2 class="section-title font-black mt-2">
                         Mit mondanak <span class="gradient-text">ügyfeleink</span>
                     </h2>
-                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Több mint 8 500 aktív felhasználó Magyarországon választotta a Magyar IPTV Pro-t.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -1767,7 +1572,7 @@
                             </svg>
                         </summary>
                         <p class="mt-4 text-gray-400">
-                            A fizetés 100%-ban biztonságos. Ha elégedett vagy az ingyenes teszttel, egy hivatalos PayPal számlát küldünk, amelyet kényelmesen kiegyenlíthetsz.
+                            A fizetés 100%-ban biztonságos. Ha elégedett vagy az ingyenes teszttel, PayPal fizetési kérelmet küldünk, amelyet kényelmesen kiegyenlíthetsz.
                         </p>
                     </details>
 
@@ -1854,7 +1659,7 @@
                         </li>
                         <li class="flex gap-3">
                             <span class="text-cyan-accent flex-shrink-0" aria-hidden="true">→</span>
-                            <span><a href="/rolunk.html" class="text-cyan-accent hover:underline font-medium">Rólunk</a> — <span class="text-gray-400">kik vagyunk, hogyan dolgozunk, cégadatok</span></span>
+                            <span><a href="/rolunk.html" class="text-cyan-accent hover:underline font-medium">Rólunk</a> — <span class="text-gray-400">kik vagyunk, hogyan dolgozunk</span></span>
                         </li>
                         <li class="flex gap-3">
                             <span class="text-cyan-accent flex-shrink-0" aria-hidden="true">→</span>
