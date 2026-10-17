@@ -14,3 +14,8 @@ desktop.ini
 
 # Vercel
 .vercel
+
+# Google Cloud / API Credentials
+*credentials*.json
+service-account*.json
+gsc*.json
