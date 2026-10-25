@@ -113,7 +113,7 @@
     <!-- Guide: TiviMate setup (EN silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/tivimate-setup.html</loc>
-        <lastmod>2026-08-20</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/tivimate-beallitas.html" />
@@ -289,7 +289,7 @@
     <!-- Guide: watching Hungarian TV abroad (EN silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/hungarian-tv-abroad.html</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-kulfoldon.html" />
@@ -399,7 +399,7 @@
     <!-- Guide: Hungarian TV in Germany (EN silo) -->
     <url>
         <loc>https://magyariptvpro.com/en/hungarian-tv-germany.html</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-nemetorszagban.html" />
