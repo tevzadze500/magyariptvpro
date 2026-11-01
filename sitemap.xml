@@ -407,13 +407,27 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-germany.html" />
     </url>
 
-    <!-- Guide: Hungarian TV in UK / England (HU) -->
+    <!-- Guide: Hungarian TV in UK / England (HU) + EN alternate -->
     <url>
         <loc>https://magyariptvpro.com/magyar-tv-angliaban.html</loc>
-        <lastmod>2026-10-17</lastmod>
+        <lastmod>2026-10-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-angliaban.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-uk.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-uk.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/magyar-tv-angliaban.html" />
+    </url>
+
+    <!-- Guide: Hungarian TV in UK / England (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/hungarian-tv-uk.html</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-angliaban.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-uk.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-uk.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/magyar-tv-angliaban.html" />
     </url>
 
