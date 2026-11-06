@@ -453,4 +453,14 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/tv2-abroad.html" />
     </url>
 
+    <!-- Guide: M4 Sport abroad (HU) -->
+    <url>
+        <loc>https://magyariptvpro.com/m4-sport-eloben-kulfoldon.html</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/m4-sport-eloben-kulfoldon.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/m4-sport-eloben-kulfoldon.html" />
+    </url>
+
 </urlset>
