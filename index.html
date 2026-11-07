@@ -598,7 +598,7 @@
         }
     </style>
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="/assets/tailwind.css?v=1">
+    <link rel="stylesheet" href="/assets/tailwind.css?v=2">
 
     <!-- Structured Data: WebSite -->
     <script type="application/ld+json">
@@ -692,7 +692,7 @@
                 "name": "Használhatom az előfizetést egyszerre több eszközön is?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Az alapértelmezett előfizetés egyszerre egy eszközön történő nézést tesz lehetővé. A lejátszási listát azonban bármennyi eszközre telepítheted, és egyszerűen válthatsz közöttük."
+                    "text": "Igen, van rá lehetőség! Az alapcsomag alapértelmezetten 1 képernyőn nézhető egyidejűleg (miközben az alkalmazást bármennyi eszközre feltelepítheted és szabadon válthatsz közöttük). Ha azonban a családban egyszerre 2–3 készüléken szeretnétek nézni az adást, több eszközre egyedi kedvezményt biztosítunk — írj nekünk WhatsApp-on a személyre szabott ajánlatért!"
                 }
             },
             {
@@ -1460,13 +1460,24 @@
                                 <svg class="w-5 h-5 text-cyan-accent mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-sm font-semibold text-cyan-accent">Több eszköz (+2)</span>
+                                <span class="text-sm font-semibold text-cyan-accent">Többeszközös kedvezmény kérhető</span>
                             </li>
                         </ul>
                         <a href="#contact" data-wa-message="Szia! Érdekel a 12 hónapos prémium csomag (29 990 Ft). Hogyan tudok fizetni?" class="js-whatsapp-cta block w-full py-3 px-4 cta-button text-white rounded-lg text-center font-semibold relative">
                             Aktiválás most
                         </a>
                     </div>
+                </div>
+
+                <!-- Multi-device Family Callout -->
+                <div class="mt-8 max-w-4xl mx-auto glass rounded-2xl p-5 sm:p-6 border border-cyan-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="text-center sm:text-left">
+                        <p class="font-bold text-white text-base">Családi csomagot keresel 2–3 egyidejű képernyőre?</p>
+                        <p class="text-xs sm:text-sm text-gray-300 mt-1">Nézd a meccset a nappaliban, miközben a család többi tagja más műsort néz egy másik tévén vagy tableten! Több eszközre egyedi kedvezményt adunk.</p>
+                    </div>
+                    <a href="#contact" data-wa-message="Szia! Érdekel a több képernyős (2-3 egyidejű eszközös) kedvezményes lehetőség. Tudtok küldeni ajánlatot?" class="js-whatsapp-cta whitespace-nowrap px-5 py-2.5 rounded-lg text-sm font-bold text-cyan-accent border border-cyan-500/40 bg-cyan-500/10 hover:bg-cyan-500/20 transition-all">
+                        Többeszközös kedvezmény kérése →
+                    </a>
                 </div>
 
                 <!-- Trust badges -->
@@ -1518,19 +1529,19 @@
                     <!-- Auto-Scroll Carousel with Movie Posters -->
                     <div class="overflow-hidden pb-4">
                         <div class="flex space-x-4 auto-scroll" style="width: max-content;">
-                            <!-- Movie Poster 1: The Batman 2 -->
+                            <!-- Movie Poster 1: Gladiátor II -->
                             <div class="w-48 flex-shrink-0 group cursor-pointer">
                                 <div class="movie-poster relative mb-3">
                                     <div class="aspect-[2/3] bg-gradient-to-br from-gray-900 via-slate-800 to-black flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/qLkQjmZFrRZKN7KKP1NmFXLVPH3.jpg" alt="The Batman 2" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                        <img src="https://image.tmdb.org/t/p/w500/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg" alt="Gladiátor II" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                                         <div class="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">The Batman 2</p>
+                                            <p class="text-white font-bold text-lg text-center">Gladiátor II</p>
                                         </div>
                                     </div>
                                     <div class="star-rating">⭐ 8.7</div>
                                 </div>
-                                <p class="text-sm font-semibold">The Batman 2</p>
-                                <p class="text-xs text-gray-500">2026 • Akció</p>
+                                <p class="text-sm font-semibold">Gladiátor II</p>
+                                <p class="text-xs text-gray-500">2025 • Akció</p>
                             </div>
 
                             <!-- Movie Poster 2: Deadpool 3 -->
@@ -1582,7 +1593,7 @@
                             <div class="w-48 flex-shrink-0 group cursor-pointer">
                                 <div class="movie-poster relative mb-3">
                                     <div class="aspect-[2/3] bg-gradient-to-br from-gray-900 via-red-900 to-orange-900 flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/qh1i3kL6lp7BmOlkKDLB5EzMWpI.jpg" alt="Mission Impossible 8" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                        <img src="https://image.tmdb.org/t/p/w500/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg" alt="Mission: Impossible – A végső leszámolás" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                                         <div class="w-full h-full bg-gradient-to-br from-red-900 to-orange-900 flex items-center justify-center p-4" style="display: none;">
                                             <p class="text-white font-bold text-lg text-center">Mission Impossible 8</p>
                                         </div>
@@ -1612,15 +1623,15 @@
                             <div class="w-48 flex-shrink-0 group cursor-pointer">
                                 <div class="movie-poster relative mb-3">
                                     <div class="aspect-[2/3] bg-gradient-to-br from-gray-900 via-slate-800 to-black flex items-center justify-center overflow-hidden">
-                                        <img src="https://image.tmdb.org/t/p/w500/qLkQjmZFrRZKN7KKP1NmFXLVPH3.jpg" alt="The Batman 2" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                        <img src="https://image.tmdb.org/t/p/w500/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg" alt="Gladiátor II" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                                         <div class="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center p-4" style="display: none;">
-                                            <p class="text-white font-bold text-lg text-center">The Batman 2</p>
+                                            <p class="text-white font-bold text-lg text-center">Gladiátor II</p>
                                         </div>
                                     </div>
                                     <div class="star-rating">⭐ 8.7</div>
                                 </div>
-                                <p class="text-sm font-semibold">The Batman 2</p>
-                                <p class="text-xs text-gray-500">2026 • Akció</p>
+                                <p class="text-sm font-semibold">Gladiátor II</p>
+                                <p class="text-xs text-gray-500">2025 • Akció</p>
                             </div>
 
                             <div class="w-48 flex-shrink-0 group cursor-pointer">
@@ -1841,7 +1852,7 @@
                             </svg>
                         </summary>
                         <p class="mt-4 text-gray-400">
-                            Az alapértelmezett előfizetés egyszerre egy eszközön történő nézést tesz lehetővé. A lejátszási listát azonban bármennyi eszközre telepítheted, és egyszerűen válthatsz közöttük.
+                            Igen, van rá lehetőség! Az alapcsomag alapértelmezetten 1 képernyőn nézhető egyidejűleg (miközben az alkalmazást bármennyi eszközre feltelepítheted és szabadon válthatsz közöttük). Ha azonban a családban egyszerre 2–3 készüléken szeretnétek nézni az adást (például élő meccset a nappaliban és filmet egy másik tévén vagy tableten), több eszközre egyedi kedvezményt biztosítunk. Írj nekünk WhatsApp-on a személyre szabott többképernyős ajánlatért!
                         </p>
                     </details>
 
