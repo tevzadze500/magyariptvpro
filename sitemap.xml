@@ -456,11 +456,35 @@
     <!-- Guide: M4 Sport abroad (HU) -->
     <url>
         <loc>https://magyariptvpro.com/m4-sport-eloben-kulfoldon.html</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/m4-sport-eloben-kulfoldon.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/m4-sport-eloben-kulfoldon.html" />
+    </url>
+
+    <!-- Guide: Hungarian TV in Switzerland (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/magyar-tv-svajcban.html</loc>
+        <lastmod>2026-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-svajcban.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-switzerland.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-switzerland.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/magyar-tv-svajcban.html" />
+    </url>
+
+    <!-- Guide: Hungarian TV in Switzerland (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/hungarian-tv-switzerland.html</loc>
+        <lastmod>2026-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-svajcban.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-switzerland.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-switzerland.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/magyar-tv-svajcban.html" />
     </url>
 
 </urlset>
