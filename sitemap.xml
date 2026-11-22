@@ -563,4 +563,28 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/csatornalista.html" />
     </url>
 
+    <!-- Guide: Hungarian TV in the Netherlands (HU) + EN alternate -->
+    <url>
+        <loc>https://magyariptvpro.com/magyar-tv-hollandiaban.html</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-hollandiaban.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-netherlands.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-netherlands.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/magyar-tv-hollandiaban.html" />
+    </url>
+
+    <!-- Guide: Hungarian TV in the Netherlands (EN silo) -->
+    <url>
+        <loc>https://magyariptvpro.com/en/hungarian-tv-netherlands.html</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magyariptvpro.com/magyar-tv-hollandiaban.html" />
+        <xhtml:link rel="alternate" hreflang="en-HU" href="https://magyariptvpro.com/en/hungarian-tv-netherlands.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://magyariptvpro.com/en/hungarian-tv-netherlands.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://magyariptvpro.com/magyar-tv-hollandiaban.html" />
+    </url>
+
 </urlset>
