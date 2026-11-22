@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTV Smarters Pro magyarul: beállítás és használat lépésről lépésre (2026)</title>
+    <title>IPTV Smarters Pro Magyarul: Beállítás Lépésről Lépésre (2026)</title>
     <meta name="description" content="Tanuld meg az IPTV Smarters Pro használatát és beállítását percek alatt. Kérj 24 órás ingyenes IPTV tesztet WhatsApp-on, és nézd a legjobb magyar adókat!">
     <meta name="keywords" content="iptv smarters pro beállítás, iptv smarters pro használata, xtream codes, magyar iptv, ingyenes iptv teszt, iptv aktiválás">
     <meta name="robots" content="index, follow">
@@ -325,7 +325,7 @@
         .content-wrapper { position: relative; z-index: 1; }
     </style>
     <!-- Tailwind (compilé, auto-hébergé) -->
-    <link rel="stylesheet" href="/assets/tailwind.css?v=2">
+    <link rel="stylesheet" href="/assets/tailwind.css?v=3">
 </head>
 <body class="bg-deep-blue text-white antialiased">
 
@@ -444,6 +444,50 @@
                         <li><strong>Bejelentkezés:</strong> Kattints az "Add User" gombra, és az alkalmazás automatikusan beolvassa az élő tévéadókat, filmeket és sorozatokat.</li>
                     </ol>
 
+                    <h2>Magyar EPG (műsorújság) beállítása és időzóna eltolás (Anglia -1 óra)</h2>
+                    <p>Az IPTV Smarters Pro bejelentkezés után egyetlen gombnyomással letölti a magyar csatornákhoz tartozó <strong>EPG műsorújságot</strong>: a főképernyőn kattints az <strong>„Install EPG”</strong> (vagy <em>Update EPG</em>) gombra, és a rendszer néhány másodperc alatt frissíti az összes csatorna (RTL, TV2, M4 Sport, Film+, Spíler) aktuális és heti műsorrendjét. Javasoljuk, hogy a <em>Settings → EPG → Auto Update</em> opciót kapcsold be, így minden nap automatikusan naprakész marad a lista.</p>
+                    <p><strong>Időeltolódás beállítása külföldön (pl. Egyesült Királyság / UK -1 óra):</strong> Ha Londonban, Manchesterben vagy Írországban használod az alkalmazást, a brit téli/nyári időszámítás 1 órával eltér a budapestitől. Ha a műsorújság egy órával elcsúszva mutatja a kezdéseket, lépj a <em>Settings (Beállítások) → EPG → Time Shift</em> menübe, és állítsd <strong>-1 órára</strong>. Így a magyar híradó és a Forma-1 közvetítés pontosan a helyi brit idő szerint jelenik meg.</p>
+
+                    <h2>Gyakori telepítési hibák az IPTV Smarters Pro-ban és megoldásaik</h2>
+                    <ul>
+                        <li><strong>„Invalid Details” vagy „Authorization Failed” (<code>http://</code> vs <code>https://</code> hiba):</strong> Az IPTV Smarters Pro érzékeny a szerver URL pontos formátumára. Soha ne írj <code>https://</code> előtagot, ha a WhatsApp-on kapott link <code>http://</code>-vel kezdődik, és ne hagyj le a végéről portszámot sem.</li>
+                        <li><strong>Láthatatlan szóköz a jelszó vagy felhasználónév végén:</strong> Okostelefonon és Firestick-en az automatikus kiegészítés gyakran egy plusz szóközt tesz a beillesztett jelszó után. Ha a belépés sikertelen, töröld a legutolsó karakter utáni üres helyet, és ügyelj a kis- és nagybetűkre (case-sensitive).</li>
+                        <li><strong>Üres csatornalista vagy régi profil gyorsítótár (cache):</strong> Ha az új belépés után nem jelennek meg a kategóriák, kattints a jobb felső sarokban a frissítés ikonra (<em>Refresh Channels, Movies &amp; Series</em>), vagy az Android/Firestick <em>Beállítások → Alkalmazások → IPTV Smarters Pro → Gyorsítótár törlése (Clear Cache)</em> pontban ürítsd a cache-t.</li>
+                        <li><strong>Smarters Pro „Live TV” akadozás gyengébb tévén:</strong> Lépj a <em>Settings → Stream Format</em> menüpontba, és próbáld átváltani a formátumot <strong>MPEGTS (.ts)</strong> és <strong>HLS (.m3u8)</strong> között, illetve a <em>Player Selection</em> résznél állítsd <em>Hardware Decoder</em> módra a folyamatos 50 fps sportközvetítésekhez.</li>
+                    </ul>
+
+                    <h2>Gyakori kérdések az IPTV Smarters Pro használatáról (GYIK)</h2>
+                    <div class="space-y-4 my-6">
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Valóban ingyenes az IPTV Smarters Pro magyarul?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Igen, az IPTV Smarters Pro alapverziója (és a Samsung/LG áruházban elérhető Smarters Player Lite) ingyenesen letölthető és használható Xtream Codes bejelentkezéssel. Csak a Magyar IPTV Pro előfizetésedre van szükséged a tartalmakhoz.</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Hogyan tudom beállítani a magyar nyelvet a menüben?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">A főképernyő jobb felső sarkában válaszd a fogaskerék ikont (<em>Settings</em>), majd keresd meg a <em>General Settings → Language</em> opciót. A csatornák elnevezései, a magyar EPG és a teljes <a href="/csatornalista.html" class="text-cyan-accent hover:underline">180+ magyar csatornalista</a> automatikusan magyar nyelven jelenik meg.</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Használhatom az IPTV Smarters Pro-t több eszközön (telefon + tévé)?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Az alkalmazást bármennyi készülékre feltelepítheted ugyanazokkal az Xtream Codes adatokkal, és szabadon válthatsz közöttük. Ha egyszerre több képernyőn szeretnétek nézni az adást családon belül, WhatsApp-on kérhetsz többeszközös kedvezményes csomagot.</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Melyik a jobb Android TV-n: az IPTV Smarters Pro vagy a TiviMate?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Telefonon, tableten és PC-n az IPTV Smarters Pro verhetetlenül kényelmes. Ha viszont dedikált Android TV-n vagy Amazon Firestick-en szeretnél kábeltévés gyorsaságú felületet, érdemes megnézned a <a href="/tivimate-beallitas.html" class="text-cyan-accent hover:underline">TiviMate beállítási útmutatónkat</a> is.</p>
+                        </details>
+                    </div>
+
                     <h2>Kérj ingyenes hozzáférést a beállításhoz!</h2>
                     <p>Szeretnéd azonnal élesben letesztelni az alkalmazást a saját tévéden vagy telefonodon? Nálunk ez teljesen kockázatmentes! Ha még nincs fiókod, nézd meg a <a href="/" class="text-cyan-accent hover:underline font-medium">magyar IPTV előfizetés</a> csomagjainkat és az elérhető 10 000+ csatornát.</p>
                     <p>Kattints az alábbi gombra, lépj velünk kapcsolatba WhatsApp-on, és munkatársaink azonnal küldenek neked egy 24 órás, kötelezettségmentes <strong>ingyenes iptv teszt</strong> hozzáférést a szükséges Xtream Codes adatokkal együtt. Ha elakadsz, ügyfélszolgálatunk online segítséget nyújt a teljes konfiguráció során, így garantáltan nem maradsz le a kedvenc műsoraidról!</p>
@@ -529,23 +573,26 @@
                             <span class="font-bold gradient-text">Magyar IPTV Pro</span>
                         </div>
                         <p class="text-sm text-gray-400">
-                            Prémium IPTV szolgáltatás Magyarországnak. 4K minőség, több mint 10 000+ élő csatorna.
+                            Prémium IPTV szolgáltatás Magyarországon és külföldön: 180+ magyar TV csatorna és 10 000+ nemzetközi élő adás 4K minőségben.
                         </p>
                     </div>
 
                     <div>
                         <h4 class="font-bold mb-4">Gyors linkek</h4>
                         <ul class="space-y-2 text-sm text-gray-400">
-                            <li><a href="/#pricing" class="hover:text-cyan-accent transition-colors">Csomagok & Árak</a></li>
+                            <li><a href="/#pricing" class="hover:text-cyan-accent transition-colors">Csomagok &amp; Árak</a></li>
+                            <li><a href="/csatornalista.html" class="hover:text-cyan-accent transition-colors">Magyar IPTV Csatornalista</a></li>
                             <li><a href="/rolunk.html" class="hover:text-cyan-accent transition-colors">Rólunk</a></li>
-                            <li><a href="/kapcsolat.html" class="hover:text-cyan-accent transition-colors">Kapcsolat & 0-24 Ügyfélszolgálat</a></li>
+                            <li><a href="/kapcsolat.html" class="hover:text-cyan-accent transition-colors">Kapcsolat &amp; 0-24 Ügyfélszolgálat</a></li>
                             <li><a href="/gyik.html" class="hover:text-cyan-accent transition-colors">Gyakori Kérdések (GYIK)</a></li>
                             <li><a href="/magyar-tv-kulfoldon.html" class="hover:text-cyan-accent transition-colors">Magyar TV Külföldön</a></li>
                             <li><a href="/rtl-klub-nezese-kulfoldon.html" class="hover:text-cyan-accent transition-colors">RTL Klub Külföldről</a></li>
                             <li><a href="/tv2-nezese-kulfoldon.html" class="hover:text-cyan-accent transition-colors">TV2 Nézése Külföldön</a></li>
+                            <li><a href="/m4-sport-eloben-kulfoldon.html" class="hover:text-cyan-accent transition-colors">M4 Sport Élőben Külföldről</a></li>
                             <li><a href="/magyar-tv-angliaban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Angliában (UK)</a></li>
                             <li><a href="/magyar-tv-ausztriaban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Ausztriában</a></li>
                             <li><a href="/magyar-tv-nemetorszagban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Németországban</a></li>
+                            <li><a href="/magyar-tv-svajcban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Svájcban</a></li>
                         </ul>
                     </div>
 
@@ -566,7 +613,7 @@
 
                     <div>
                         <h4 class="font-bold mb-4">Kapcsolat</h4>
-                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <span class="text-gray-500">hamarosan elérhető</span></p>
+                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <a href="https://wa.me/19297186779" class="text-white hover:text-cyan-accent transition-colors font-medium" target="_blank" rel="noopener noreferrer">+1 929 718 6779</a></p>
                         <p class="text-sm text-gray-400 mb-4">Email: <a href="mailto:contact@magyariptvpro.com" class="hover:text-cyan-accent transition-colors">contact@magyariptvpro.com</a></p>
                         <p class="text-xs text-gray-500 mb-4">0-24 órában elérhető segítség</p>
                         <p class="text-sm"><a href="/en" hreflang="en" class="text-gray-400 hover:text-cyan-accent transition-colors">English version</a></p>

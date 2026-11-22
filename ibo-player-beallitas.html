@@ -336,7 +336,7 @@
         .content-wrapper { position: relative; z-index: 1; }
     </style>
     <!-- Tailwind (compilé, auto-hébergé) -->
-    <link rel="stylesheet" href="/assets/tailwind.css?v=2">
+    <link rel="stylesheet" href="/assets/tailwind.css?v=3">
 </head>
 <body class="bg-deep-blue text-white antialiased">
 
@@ -447,6 +447,50 @@
                         <li><strong>A lejátszási lista betöltése:</strong> Nyisd meg az alkalmazás hivatalos weboldalát egy böngészőben, add meg a tévéden látott MAC címet és Key-t, majd másold be az M3U linket vagy az Xtream Codes adatokat, amelyeket az előfizetésedhez biztosítunk számodra.</li>
                     </ol>
 
+                    <h2>Magyar EPG (műsorújság) beállítása és időzóna eltolás (pl. Anglia -1 óra)</h2>
+                    <p>Az IBO Player az Xtream Codes adatok megadása után automatikusan letölti a magyar csatornákhoz tartozó <strong>EPG (elektronikus műsorújság)</strong> adatbázist, így minden adón (RTL, TV2, M4 Sport, Spíler) láthatod az aktuális és a következő műsorokat is. Ha a műsorújság első indításkor üres marad, lépj be az alkalmazás <em>Settings (Beállítások) → Reload Playlist / Update EPG</em> menüpontjába, és várj 30–60 másodpercet a szinkronizálásra.</p>
+                    <p><strong>Fontos tipp külföldön élő magyaroknak (különösen Angliában / UK-ban):</strong> Ha az Egyesült Királyságban vagy Írországban nézed a magyar adásokat, a helyi időzóna 1 órával elmarad a budapestitől (GMT/BST vs. CET/CEST). Emiatt előfordulhat, hogy az EPG egy órával elcsúszva mutatja a kezdési időpontokat. Ennek javításához nyisd meg az IBO Player-ben a <em>Settings → Time Format / EPG Time Shift</em> opciót, és állíts be <strong>-1 óra</strong> (vagy szükség esetén +1 óra) eltolást — a műsorújság azonnal a helyi órádhoz igazodik.</p>
+
+                    <h2>Gyakori telepítési hibák az IBO Player-ben és gyors megoldásaik</h2>
+                    <ul>
+                        <li><strong>Hibás Xtream szerver URL (<code>http://</code> helyett <code>https://</code>):</strong> A legtöbb bejelentkezési hibát az okozza, hogy a böngésző vagy a billentyűzet automatikusan <code>https://</code> előtaggal írja be a szervercímet. Mindig pontosan a WhatsApp-on kapott <code>http://</code> címet és portszámot használd.</li>
+                        <li><strong>Láthatatlan szóköz a jelszó vagy felhasználónév végén:</strong> Telefonos másoláskor a billentyűzet gyakran egy üres szóközt szúr be az utolsó karakter mögé. Az IBO Player webes felületén mindig ellenőrizd a mezők elejét és végét mentés előtt.</li>
+                        <li><strong>MAC cím gyorsítótár (cache) beragadása új lista feltöltése után:</strong> Ha az IBO Player weboldalán (<em>iboplayer.com</em>) már elmentetted az új lejátszási listát, de a tévén még mindig a régi vagy üres lista látszik, ne csak lépj vissza a menübe — kapcsold ki a tévét a konnektorból 15 másodpercre (vagy töröld az alkalmazás gyorsítótárát), majd indítsd újra az IBO Player-t, hogy frissítse a MAC címhez rendelt profilt.</li>
+                        <li><strong>Elfelejtett 7 napos próbaidőszak az alkalmazásban:</strong> Az IBO Player magánál az alkalmazás fejlesztőjénél 7 napig ingyenes, utána egyszeri kb. 8 € alkalmazás-aktiválást kérhet. Ez nem a Magyar IPTV Pro előfizetés része; ha teljesen ingyenes lejátszót szeretnél, próbáld ki Androidon a <a href="/tivimate-beallitas.html" class="text-cyan-accent hover:underline">TiviMate</a> vagy az <a href="/iptv-smarters-pro-beallitas.html" class="text-cyan-accent hover:underline">IPTV Smarters Pro</a> appot.</li>
+                    </ul>
+
+                    <h2>Gyakori kérdések az IBO Player használatáról (GYIK)</h2>
+                    <div class="space-y-4 my-6">
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Ingyenes az IBO Player alkalmazás Samsung és LG Smart TV-n?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Az alkalmazás letöltése ingyenes, és 7 napos teljes értékű próbaidőszakot biztosít. A 7 nap lejárta után az IBO Player fejlesztői felületén egyszeri (élettartamra szóló) kb. 8 eurós aktiválási díjat kérnek az app használatáért, ami független a Magyar IPTV Pro előfizetéstől.</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Miért nem látom a Device MAC címet és a Device Key-t?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Ha már volt korábban feltöltve lista, az alkalmazás közvetlenül a főmenübe ugrik. Ilyenkor a főképernyőn válaszd a <em>Change Playlist</em> vagy a <em>Settings → Account Info</em> menüpontot: ott bármikor újra kiírja a pontos MAC címet és a Device Key kódot.</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Melyik a jobb az IBO Player-ben: az M3U link vagy az Xtream Codes?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Mindkettő működik, de az <strong>Xtream Codes</strong> (vagy az IBO weboldalon a „Add XC Playlist”) általában gyorsabban szinkronizálja a magyar EPG-t, a 7 napos visszanézést (catch-up) és a VOD filmkategóriákat. WhatsApp-on kérésre mi távolról feltöltjük neked a legoptimálisabb formátumban.</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Előre meg tudom nézni, mely magyar csatornák érhetők el az IBO Player-ben?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Igen, a teljes <a href="/csatornalista.html" class="text-cyan-accent hover:underline">180+ magyar csatornalista</a> (RTL, TV2, M4 Sport, Spíler, film- és gyerekcsatornák) elérhető IBO Player-ben, és a 24 órás ingyenes teszt alatt a saját tévéden is kipróbálhatod őket.</p>
+                        </details>
+                    </div>
+
                     <h2>Nem akarsz a technikai részletekkel bajlódni? Segítünk!</h2>
                     <p>Tudjuk, hogy a linkek másolása és a beállítások kezelése néha bosszantó lehet. Ha szeretnéd megspórolni az időt, mi teljesen ingyen elvégezzük helyetted a teljes konfigurációt! Csatlakozz te is a legstabilabb <a href="/" class="text-cyan-accent hover:underline font-medium">magyar IPTV előfizetés</a> hálózathoz, amely 10 000+ csatornát és prémium 4K minőséget garantál.</p>
                     <p>Kattints az alábbi gombra, lépj velünk kapcsolatba WhatsApp-on, és küldd el a tévéd képernyőjén látható MAC címet és Device Key-t. Csapatunk azonnal beállít neked egy 24 órás, kötelezettségmentes <strong>ingyenes iptv teszt</strong> hozzáférést. Az aktiválás nálunk mindössze 5 percet vesz igénybe, és máris élvezheted a prémium magyar és nemzetközi csatornákat!</p>
@@ -536,23 +580,26 @@
                             <span class="font-bold gradient-text">Magyar IPTV Pro</span>
                         </div>
                         <p class="text-sm text-gray-400">
-                            Prémium IPTV szolgáltatás Magyarországnak. 4K minőség, több mint 10 000+ élő csatorna.
+                            Prémium IPTV szolgáltatás Magyarországon és külföldön: 180+ magyar TV csatorna és 10 000+ nemzetközi élő adás 4K minőségben.
                         </p>
                     </div>
 
                     <div>
                         <h4 class="font-bold mb-4">Gyors linkek</h4>
                         <ul class="space-y-2 text-sm text-gray-400">
-                            <li><a href="/#pricing" class="hover:text-cyan-accent transition-colors">Csomagok & Árak</a></li>
+                            <li><a href="/#pricing" class="hover:text-cyan-accent transition-colors">Csomagok &amp; Árak</a></li>
+                            <li><a href="/csatornalista.html" class="hover:text-cyan-accent transition-colors">Magyar IPTV Csatornalista</a></li>
                             <li><a href="/rolunk.html" class="hover:text-cyan-accent transition-colors">Rólunk</a></li>
-                            <li><a href="/kapcsolat.html" class="hover:text-cyan-accent transition-colors">Kapcsolat & 0-24 Ügyfélszolgálat</a></li>
+                            <li><a href="/kapcsolat.html" class="hover:text-cyan-accent transition-colors">Kapcsolat &amp; 0-24 Ügyfélszolgálat</a></li>
                             <li><a href="/gyik.html" class="hover:text-cyan-accent transition-colors">Gyakori Kérdések (GYIK)</a></li>
                             <li><a href="/magyar-tv-kulfoldon.html" class="hover:text-cyan-accent transition-colors">Magyar TV Külföldön</a></li>
                             <li><a href="/rtl-klub-nezese-kulfoldon.html" class="hover:text-cyan-accent transition-colors">RTL Klub Külföldről</a></li>
                             <li><a href="/tv2-nezese-kulfoldon.html" class="hover:text-cyan-accent transition-colors">TV2 Nézése Külföldön</a></li>
+                            <li><a href="/m4-sport-eloben-kulfoldon.html" class="hover:text-cyan-accent transition-colors">M4 Sport Élőben Külföldről</a></li>
                             <li><a href="/magyar-tv-angliaban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Angliában (UK)</a></li>
                             <li><a href="/magyar-tv-ausztriaban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Ausztriában</a></li>
                             <li><a href="/magyar-tv-nemetorszagban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Németországban</a></li>
+                            <li><a href="/magyar-tv-svajcban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Svájcban</a></li>
                         </ul>
                     </div>
 
@@ -573,7 +620,7 @@
 
                     <div>
                         <h4 class="font-bold mb-4">Kapcsolat</h4>
-                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <span class="text-gray-500">hamarosan elérhető</span></p>
+                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <a href="https://wa.me/19297186779" class="text-white hover:text-cyan-accent transition-colors font-medium" target="_blank" rel="noopener noreferrer">+1 929 718 6779</a></p>
                         <p class="text-sm text-gray-400 mb-4">Email: <a href="mailto:contact@magyariptvpro.com" class="hover:text-cyan-accent transition-colors">contact@magyariptvpro.com</a></p>
                         <p class="text-xs text-gray-500 mb-4">0-24 órában elérhető segítség</p>
                         <p class="text-sm"><a href="/en" hreflang="en" class="text-gray-400 hover:text-cyan-accent transition-colors">English version</a></p>

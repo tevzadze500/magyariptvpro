@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTV Telepítési Útmutató (2026) – Beállítás Minden Eszközre 5 Perc Alatt</title>
-    <meta name="description" content="Teljes IPTV telepítési útmutató lépésről lépésre: alkalmazás letöltése, Xtream kódok beírása és aktiválás Smart TV-re, Firestick-re, Androidra és iOS-re 5 perc alatt!">
+    <title>IPTV Telepítési Útmutató (2026) – Beállítás Minden Eszközre</title>
+    <meta name="description" content="Teljes IPTV telepítési útmutató lépésről lépésre: alkalmazás letöltése, Xtream kódok és aktiválás Smart TV, Firestick, Android és iOS eszközön 5 perc alatt!">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#020617">
     <link rel="canonical" href="https://magyariptvpro.com/install-guide.html">
@@ -69,6 +69,28 @@
                 "name": "Élvezze a műsort",
                 "text": "Készen áll! A tartalom néhány másodperc alatt betöltődik. Élvezze a teljes Ultra 4K élményt minden eszközén.",
                 "url": "https://magyariptvpro.com/install-guide.html#step-3"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Főoldal",
+                "item": "https://magyariptvpro.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Telepítési útmutató",
+                "item": "https://magyariptvpro.com/install-guide.html"
             }
         ]
     }
@@ -345,7 +367,7 @@
         .content-wrapper { position: relative; z-index: 1; }
     </style>
     <!-- Tailwind (compilé, auto-hébergé) -->
-    <link rel="stylesheet" href="/assets/tailwind.css?v=2">
+    <link rel="stylesheet" href="/assets/tailwind.css?v=3">
 </head>
 <body class="bg-deep-blue text-white antialiased">
 
@@ -491,6 +513,78 @@
                 </div>
             </section>
 
+            <!-- EPG, Időeltolódás & Gyakori telepítési hibák -->
+            <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="glass-card rounded-2xl p-6 sm:p-8 mb-6">
+                    <h2 class="text-xl font-bold text-white mb-4">Melyik IPTV alkalmazást válaszd eszköz szerint? (2026-os összehasonlítás)</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Mivel a <strong>Magyar IPTV Pro</strong> szabványos Xtream Codes API és M3U csatlakozást használ, nem vagy egyetlen dobozhoz kötve. Az alábbi összefoglaló segít kiválasztani a leggyorsabb lejátszót a saját készülékedhez:
+                    </p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-sm">
+                            <thead>
+                                <tr class="border-b border-card-border text-cyan-accent">
+                                    <th class="py-3 pr-4 font-bold">Eszköz típusa</th>
+                                    <th class="py-3 pr-4 font-bold">Ajánlott alkalmazás</th>
+                                    <th class="py-3 pr-4 font-bold">Csatlakozás</th>
+                                    <th class="py-3 font-bold">Részletes útmutató</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-card-border text-gray-300">
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-white">Samsung &amp; LG Smart TV</td>
+                                    <td class="py-3 pr-4">IBO Player / Smarters Player Lite</td>
+                                    <td class="py-3 pr-4">MAC + Device Key vagy Xtream</td>
+                                    <td class="py-3"><a href="/smart-tv-iptv-beallitas.html" class="text-cyan-accent hover:underline">Smart TV útmutató →</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-white">Amazon Fire TV Stick / Android TV</td>
+                                    <td class="py-3 pr-4">TiviMate vagy IPTV Smarters Pro</td>
+                                    <td class="py-3 pr-4">Xtream Codes API (URL, user, jelszó)</td>
+                                    <td class="py-3"><a href="/tivimate-beallitas.html" class="text-cyan-accent hover:underline">TiviMate útmutató →</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-white">Android telefon / iPhone / iPad</td>
+                                    <td class="py-3 pr-4">IPTV Smarters Pro / Smarters Lite</td>
+                                    <td class="py-3 pr-4">Xtream Codes API</td>
+                                    <td class="py-3"><a href="/iptv-smarters-pro-beallitas.html" class="text-cyan-accent hover:underline">Smarters Pro útmutató →</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-white">Windows PC / Mac laptop</td>
+                                    <td class="py-3 pr-4">IPTV Smarters / VLC Media Player</td>
+                                    <td class="py-3 pr-4">Xtream Codes vagy M3U link</td>
+                                    <td class="py-3"><a href="/blog.html" class="text-cyan-accent hover:underline">Hibaelhárítás &amp; tippek →</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-4 leading-relaxed">
+                        <strong>Hálózati tipp a 4K stabilitáshoz:</strong> Ha a tévéd közel van a routerhez, használj vezetékes Ethernet kábelt (LAN). Wi-Fi esetén csatlakozz az 5 GHz-es hálózatra a 2,4 GHz helyett — így a 4K és 50 fps sportközvetítések (M4 Sport, Spíler 1–2) még esti csúcsidőben sem pufferelnek. Külföldről (Németország, Ausztria, Anglia, Svájc) VPN nélkül működik.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-xl font-bold text-white mb-3">Magyar EPG műsorújság és időzóna beállítása (pl. Anglia -1 óra)</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                            Az Xtream Codes bejelentkezés után minden ajánlott lejátszó (TiviMate, IPTV Smarters Pro, IBO Player) automatikusan letölti a <a href="/csatornalista.html" class="text-cyan-accent hover:underline">180+ magyar TV csatorna</a> elektronikus műsorújságját (EPG). Ha első indításkor még üres a műsorlista, futtass egy kézi frissítést az alkalmazás <em>Settings → Update EPG</em> menüjében.
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            <strong class="text-white">Külföldi időzóna (különösen Egyesült Királyság / UK -1 óra):</strong> Ha Londonból vagy Írországból nézed az adást, a brit helyi idő 1 órával elmarad a budapestitől. Hogy a műsorújság pontos kezdési időpontokat mutasson, az alkalmazás EPG beállításainál állítsd az időeltolást (<em>EPG Time Shift / Offset</em>) <strong class="text-white">-1:00 órára</strong>.
+                        </p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h2 class="text-xl font-bold text-white mb-3">Gyakori telepítési hibák és azonnali megoldásaik</h2>
+                        <ul class="text-gray-300 text-sm space-y-3 leading-relaxed">
+                            <li><strong class="text-white">Elírt szerver URL (<code>http://</code> helyett <code>https://</code>):</strong> A legtöbb bejelentkezési hiba oka, hogy a telefon vagy tévé automatikusan <code>https://</code>-t ír be. Mindig pontosan a WhatsApp-on kapott <code>http://</code> címet és portszámot add meg.</li>
+                            <li><strong class="text-white">Láthatatlan szóköz a jelszó mögött:</strong> Másolás-beillesztéskor a mobil billentyűzet gyakran egy üres szóközt szúr a jelszó vagy felhasználónév végére. Ellenőrizd a mezők végét mentés előtt!</li>
+                            <li><strong class="text-white">IBO Player MAC cím gyorsítótár (cache) beragadása:</strong> Ha weben már feltöltötted az új listát, de a Samsung/LG tévén még üres a menü, húzd ki a tévét a konnektorból 15 másodpercre (teljes újraindítás), így a MAC profil azonnal frissül.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <!-- Internal link to homepage with keyword anchor (SEO) -->
             <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
                 <p class="text-center text-gray-400">
@@ -628,23 +722,26 @@
                             <span class="font-bold gradient-text">Magyar IPTV Pro</span>
                         </div>
                         <p class="text-sm text-gray-400">
-                            Prémium IPTV szolgáltatás Magyarországnak. 4K minőség, több mint 10 000+ élő csatorna.
+                            Prémium IPTV szolgáltatás Magyarországon és külföldön: 180+ magyar TV csatorna és 10 000+ nemzetközi élő adás 4K minőségben.
                         </p>
                     </div>
 
                     <div>
                         <h4 class="font-bold mb-4">Gyors linkek</h4>
                         <ul class="space-y-2 text-sm text-gray-400">
-                            <li><a href="/#pricing" class="hover:text-cyan-accent transition-colors">Csomagok & Árak</a></li>
+                            <li><a href="/#pricing" class="hover:text-cyan-accent transition-colors">Csomagok &amp; Árak</a></li>
+                            <li><a href="/csatornalista.html" class="hover:text-cyan-accent transition-colors">Magyar IPTV Csatornalista</a></li>
                             <li><a href="/rolunk.html" class="hover:text-cyan-accent transition-colors">Rólunk</a></li>
-                            <li><a href="/kapcsolat.html" class="hover:text-cyan-accent transition-colors">Kapcsolat & 0-24 Ügyfélszolgálat</a></li>
+                            <li><a href="/kapcsolat.html" class="hover:text-cyan-accent transition-colors">Kapcsolat &amp; 0-24 Ügyfélszolgálat</a></li>
                             <li><a href="/gyik.html" class="hover:text-cyan-accent transition-colors">Gyakori Kérdések (GYIK)</a></li>
                             <li><a href="/magyar-tv-kulfoldon.html" class="hover:text-cyan-accent transition-colors">Magyar TV Külföldön</a></li>
                             <li><a href="/rtl-klub-nezese-kulfoldon.html" class="hover:text-cyan-accent transition-colors">RTL Klub Külföldről</a></li>
                             <li><a href="/tv2-nezese-kulfoldon.html" class="hover:text-cyan-accent transition-colors">TV2 Nézése Külföldön</a></li>
+                            <li><a href="/m4-sport-eloben-kulfoldon.html" class="hover:text-cyan-accent transition-colors">M4 Sport Élőben Külföldről</a></li>
                             <li><a href="/magyar-tv-angliaban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Angliában (UK)</a></li>
                             <li><a href="/magyar-tv-ausztriaban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Ausztriában</a></li>
                             <li><a href="/magyar-tv-nemetorszagban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Németországban</a></li>
+                            <li><a href="/magyar-tv-svajcban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Svájcban</a></li>
                         </ul>
                     </div>
 
@@ -665,7 +762,7 @@
 
                     <div>
                         <h4 class="font-bold mb-4">Kapcsolat</h4>
-                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <span class="text-gray-500">hamarosan elérhető</span></p>
+                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <a href="https://wa.me/19297186779" class="text-white hover:text-cyan-accent transition-colors font-medium" target="_blank" rel="noopener noreferrer">+1 929 718 6779</a></p>
                         <p class="text-sm text-gray-400 mb-4">Email: <a href="mailto:contact@magyariptvpro.com" class="hover:text-cyan-accent transition-colors">contact@magyariptvpro.com</a></p>
                         <p class="text-xs text-gray-500 mb-4">0-24 órában elérhető segítség</p>
                         <p class="text-sm"><a href="/en" hreflang="en" class="text-gray-400 hover:text-cyan-accent transition-colors">English version</a></p>

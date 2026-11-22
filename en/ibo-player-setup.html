@@ -349,7 +349,7 @@
         .content-wrapper { position: relative; z-index: 1; }
     </style>
     <!-- Tailwind (compilé, auto-hébergé) -->
-    <link rel="stylesheet" href="/assets/tailwind.css?v=2">
+    <link rel="stylesheet" href="/assets/tailwind.css?v=3">
 </head>
 <body class="bg-deep-blue text-white antialiased">
 
@@ -521,6 +521,63 @@
                         </ul>
                         <p class="text-sm text-gray-400 mt-5">Still stuck? <a href="#contact" class="text-cyan-accent hover:text-blue-accent font-medium">Contact our support team below</a> — we'll fix it for you in minutes.</p>
                     </div>
+
+                    <!-- EPG & Timezone + Common Setup Errors -->
+                    <div class="grid md:grid-cols-2 gap-6 mt-8">
+                        <div class="glass-card rounded-2xl p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-white mb-3">Hungarian EPG &amp; Timezone Offset (UK -1h)</h3>
+                            <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                Once your Xtream Codes or M3U list is uploaded, IBO Player automatically downloads the Hungarian <strong>EPG (Electronic Program Guide)</strong> for RTL, TV2, M4 Sport, and all <a href="/en/channel-list.html" class="text-cyan-accent hover:underline">180+ Hungarian channels</a>. If the guide appears blank at first launch, open <code>Settings → Reload Playlist / Update EPG</code> and allow 30–60 seconds for syncing.
+                            </p>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <strong class="text-white">Living in the UK or Ireland?</strong> Because GMT/BST is 1 hour behind Budapest time (CET/CEST), programme start times can appear shifted by one hour. Open <code>Settings → EPG Time Shift</code> inside IBO Player and set the offset to <strong class="text-white">-1 hour</strong> so live football, Formula 1, and evening news align cleanly with your local clock.
+                            </p>
+                        </div>
+
+                        <div class="glass-card rounded-2xl p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-white mb-3">Common Setup Errors &amp; Quick Fixes</h3>
+                            <ul class="text-gray-300 text-sm space-y-3 leading-relaxed">
+                                <li><strong class="text-white">Wrong Xtream URL (<code>http://</code> vs <code>https://</code>):</strong> Mobile browsers often auto-correct server links to <code>https://</code>. Always paste the exact <code>http://</code> server address and port number sent on WhatsApp.</li>
+                                <li><strong class="text-white">Invisible trailing space after password:</strong> Copy-pasting on iOS/Android frequently adds a trailing blank space after the password or username. Double-check both ends of every field on the IBO web portal before clicking Save.</li>
+                                <li><strong class="text-white">Stuck MAC address cache after updating playlist:</strong> If you saved your playlist on the IBO website but the TV still shows an empty screen, unplug the TV from power for 15 seconds (cold reboot) to flush the MAC profile cache, then reopen IBO Player.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Player-specific FAQ (4 questions) -->
+                    <div class="mt-10">
+                        <h3 class="text-2xl font-bold text-white mb-5 text-center">IBO Player Setup FAQ</h3>
+                        <div class="space-y-4">
+                            <details class="glass-card rounded-xl p-5">
+                                <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                    <span>Is IBO Player free on Samsung and LG Smart TVs?</span>
+                                    <span class="text-cyan-accent font-mono">+</span>
+                                </summary>
+                                <p class="text-gray-300 text-sm mt-3 leading-relaxed">Downloading IBO Player is free and includes a full 7-day trial. After 7 days, the app developer charges a one-time lifetime activation fee (around €8) via their official portal, completely separate from your Magyar IPTV Pro subscription.</p>
+                            </details>
+                            <details class="glass-card rounded-xl p-5">
+                                <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                    <span>Where can I find my Device MAC Address and Device Key again?</span>
+                                    <span class="text-cyan-accent font-mono">+</span>
+                                </summary>
+                                <p class="text-gray-300 text-sm mt-3 leading-relaxed">If a playlist is already loaded, IBO Player skips the initial activation screen. Open <code>Change Playlist</code> or <code>Settings → Account Info</code> from the main screen to display your exact MAC address and Device Key at any time.</p>
+                            </details>
+                            <details class="glass-card rounded-xl p-5">
+                                <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                    <span>Should I upload an M3U link or Xtream Codes to IBO Player?</span>
+                                    <span class="text-cyan-accent font-mono">+</span>
+                                </summary>
+                                <p class="text-gray-300 text-sm mt-3 leading-relaxed">Both formats work well, though <strong>Xtream Codes (Add XC Playlist)</strong> generally syncs the Hungarian EPG, VOD movie categories, and 7-day catch-up faster. Message us your MAC &amp; Key on WhatsApp and we can upload it remotely for you in 2 minutes.</p>
+                            </details>
+                            <details class="glass-card rounded-xl p-5">
+                                <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                    <span>What if I want a completely free player with no €8 app fee?</span>
+                                    <span class="text-cyan-accent font-mono">+</span>
+                                </summary>
+                                <p class="text-gray-300 text-sm mt-3 leading-relaxed">On Android TV, Google TV, and Amazon Firestick, you can use <a href="/en/iptv-smarters-pro-setup.html" class="text-cyan-accent hover:underline">IPTV Smarters Pro</a> or the free version of <a href="/en/tivimate-setup.html" class="text-cyan-accent hover:underline">TiviMate</a> with zero app activation fee.</p>
+                            </details>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -602,19 +659,26 @@
                             <span class="font-bold gradient-text">Magyar IPTV Pro</span>
                         </div>
                         <p class="text-sm text-gray-400">
-                            Premium IPTV service for Hungary. 4K quality, more than 10,000+ live channels.
+                            Premium IPTV service in Hungary &amp; abroad: 180+ Hungarian TV channels and 10,000+ international live channels in 4K.
                         </p>
                     </div>
 
                     <div>
                         <h4 class="font-bold mb-4">Quick Links</h4>
                         <ul class="space-y-2 text-sm text-gray-400">
-                            <li><a href="/en/#pricing" class="hover:text-cyan-accent transition-colors">Pricing</a></li>
-                            <li><a href="/en/#features" class="hover:text-cyan-accent transition-colors">Features</a></li>
+                            <li><a href="/en#pricing" class="hover:text-cyan-accent transition-colors">Pricing (€)</a></li>
+                            <li><a href="/en/channel-list.html" class="hover:text-cyan-accent transition-colors">Hungarian Channel List</a></li>
                             <li><a href="/en/about.html" class="hover:text-cyan-accent transition-colors">About Us</a></li>
                             <li><a href="/en/contact.html" class="hover:text-cyan-accent transition-colors">Contact</a></li>
                             <li><a href="/en/faq.html" class="hover:text-cyan-accent transition-colors">FAQ</a></li>
-                            <li><a href="/en/" class="hover:text-cyan-accent transition-colors">Home</a></li>
+                            <li><a href="/en/hungarian-tv-abroad.html" class="hover:text-cyan-accent transition-colors">Hungarian TV Abroad</a></li>
+                            <li><a href="/en/rtl-klub-abroad.html" class="hover:text-cyan-accent transition-colors">Watch RTL Klub Abroad</a></li>
+                            <li><a href="/en/tv2-abroad.html" class="hover:text-cyan-accent transition-colors">Watch TV2 Abroad</a></li>
+                            <li><a href="/en/m4-sport-abroad.html" class="hover:text-cyan-accent transition-colors">Watch M4 Sport Abroad</a></li>
+                            <li><a href="/en/hungarian-tv-uk.html" class="hover:text-cyan-accent transition-colors">Hungarian TV in the UK</a></li>
+                            <li><a href="/en/hungarian-tv-austria.html" class="hover:text-cyan-accent transition-colors">Hungarian TV in Austria</a></li>
+                            <li><a href="/en/hungarian-tv-germany.html" class="hover:text-cyan-accent transition-colors">Hungarian TV in Germany</a></li>
+                            <li><a href="/en/hungarian-tv-switzerland.html" class="hover:text-cyan-accent transition-colors">Hungarian TV in Switzerland</a></li>
                         </ul>
                     </div>
 
@@ -633,7 +697,7 @@
 
                     <div>
                         <h4 class="font-bold mb-4">Contact</h4>
-                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <span class="text-gray-500">coming soon</span></p>
+                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <a href="https://wa.me/19297186779" class="text-white hover:text-cyan-accent transition-colors font-medium" target="_blank" rel="noopener noreferrer">+1 929 718 6779</a></p>
                         <p class="text-sm text-gray-400 mb-4">Email: <a href="mailto:contact@magyariptvpro.com" class="hover:text-cyan-accent transition-colors">contact@magyariptvpro.com</a></p>
                         <p class="text-xs text-gray-500 mb-4">Support available 24/7</p>
                         <p class="text-sm"><a href="/" hreflang="hu" class="text-gray-400 hover:text-cyan-accent transition-colors">Magyar változat</a></p>

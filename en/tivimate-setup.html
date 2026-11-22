@@ -349,7 +349,7 @@
         .content-wrapper { position: relative; z-index: 1; }
     </style>
     <!-- Tailwind (compilé, auto-hébergé) -->
-    <link rel="stylesheet" href="/assets/tailwind.css?v=2">
+    <link rel="stylesheet" href="/assets/tailwind.css?v=3">
 </head>
 <body class="bg-deep-blue text-white antialiased">
 
@@ -555,6 +555,63 @@
                         </ul>
                         <p class="text-sm text-gray-400 mt-5">Still stuck? <a href="#contact" class="text-cyan-accent hover:text-blue-accent font-medium">Contact our support team below</a> — we'll fix it for you in minutes.</p>
                     </div>
+
+                    <!-- EPG & Timezone + Common Setup Errors -->
+                    <div class="grid md:grid-cols-2 gap-6 mt-8">
+                        <div class="glass-card rounded-2xl p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-white mb-3">Hungarian EPG &amp; Timezone Offset (UK -1h)</h3>
+                            <p class="text-gray-300 text-sm leading-relaxed mb-3">
+                                TiviMate is famous for its cable-box style <strong>Electronic Program Guide (EPG)</strong>. Once logged in via Xtream Codes, it automatically pulls the full Hungarian schedule for RTL, TV2, M4 Sport, and the entire <a href="/en/channel-list.html" class="text-cyan-accent hover:underline">180+ Hungarian channel list</a>. Set <code>Settings → EPG → Update interval</code> to 24 hours and enable <em>Update on app start</em>.
+                            </p>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <strong class="text-white">Watching from the UK or Ireland (-1h offset):</strong> Because UK time (GMT/BST) is 1 hour behind Budapest (CET/CEST), guide times can show one hour ahead. Fix it without changing your TV clock: go to <code>Settings → EPG → EPG Sources</code>, pick your playlist EPG source, and set <strong class="text-white">Time offset (h:mm) to -1:00</strong>.
+                            </p>
+                        </div>
+
+                        <div class="glass-card rounded-2xl p-6 sm:p-8">
+                            <h3 class="text-xl font-bold text-white mb-3">Common Installation Errors &amp; Solutions</h3>
+                            <ul class="text-gray-300 text-sm space-y-3 leading-relaxed">
+                                <li><strong class="text-white">"An error occurred" on login (<code>http://</code> vs <code>https://</code>):</strong> Most login failures come from typing <code>https://</code> instead of <code>http://</code> or omitting the port number in the Server URL. Match the exact string sent via WhatsApp.</li>
+                                <li><strong class="text-white">Invisible trailing space after password:</strong> Phone remote apps (Google TV / Fire TV remote) frequently append a trailing space after pasting your password or username. Always tap backspace once if there is extra whitespace at the end.</li>
+                                <li><strong class="text-white">Error 458 / 403 or choppy 50 fps sports:</strong> Ensure your single-screen subscription isn't open simultaneously on another device, clear TiviMate cache in Android TV settings, and set <code>Settings → Playback → Video decoder</code> to <strong>Hardware</strong> with <em>Auto Frame Rate (AFR)</em> enabled for smooth Formula 1 and football.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Player-specific FAQ (4 questions) -->
+                    <div class="mt-10">
+                        <h3 class="text-2xl font-bold text-white mb-5 text-center">TiviMate Setup FAQ</h3>
+                        <div class="space-y-4">
+                            <details class="glass-card rounded-xl p-5">
+                                <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                    <span>Is the free version of TiviMate enough, or do I need TiviMate Premium?</span>
+                                    <span class="text-cyan-accent font-mono">+</span>
+                                </summary>
+                                <p class="text-gray-300 text-sm mt-3 leading-relaxed">The free version plays live Hungarian TV channels reliably. Upgrading to TiviMate Premium (via the TiviMate Companion app) unlocks VOD movies &amp; series, 7-day catch-up, favorites grouping, and multi-playlist sync.</p>
+                            </details>
+                            <details class="glass-card rounded-xl p-5">
+                                <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                    <span>Can I install TiviMate on a Samsung or LG Smart TV?</span>
+                                    <span class="text-cyan-accent font-mono">+</span>
+                                </summary>
+                                <p class="text-gray-300 text-sm mt-3 leading-relaxed">TiviMate is built exclusively for Android TV, Google TV, and Amazon Fire TV Stick. On Samsung (Tizen) and LG (webOS) TVs, use <a href="/en/ibo-player-setup.html" class="text-cyan-accent hover:underline">IBO Player</a> or follow our <a href="/en/smart-tv-iptv-setup.html" class="text-cyan-accent hover:underline">Smart TV setup guide</a>—or plug in an affordable Firestick.</p>
+                            </details>
+                            <details class="glass-card rounded-xl p-5">
+                                <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                    <span>How do I hide non-Hungarian categories in TiviMate?</span>
+                                    <span class="text-cyan-accent font-mono">+</span>
+                                </summary>
+                                <p class="text-gray-300 text-sm mt-3 leading-relaxed">Open <code>Settings → Playlists → [Your Playlist] → Manage groups → TV</code>, select <em>Hide all groups</em>, and then toggle on only the <strong>HU / Hungary</strong> groups (plus any international sports groups you want). Your channel list immediately becomes clean and fast to browse.</p>
+                            </details>
+                            <details class="glass-card rounded-xl p-5">
+                                <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                    <span>Does 7-day Catch-up work inside TiviMate?</span>
+                                    <span class="text-cyan-accent font-mono">+</span>
+                                </summary>
+                                <p class="text-gray-300 text-sm mt-3 leading-relaxed">Yes! With Xtream Codes login, channels supporting 7-day catch-up display a small clock icon in the TiviMate EPG grid. Simply press left on your remote to scroll back through past programmes and start watching instantly.</p>
+                            </details>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -636,19 +693,26 @@
                             <span class="font-bold gradient-text">Magyar IPTV Pro</span>
                         </div>
                         <p class="text-sm text-gray-400">
-                            Premium IPTV service for Hungary. 4K quality, more than 10,000+ live channels.
+                            Premium IPTV service in Hungary &amp; abroad: 180+ Hungarian TV channels and 10,000+ international live channels in 4K.
                         </p>
                     </div>
 
                     <div>
                         <h4 class="font-bold mb-4">Quick Links</h4>
                         <ul class="space-y-2 text-sm text-gray-400">
-                            <li><a href="/en/#pricing" class="hover:text-cyan-accent transition-colors">Pricing</a></li>
-                            <li><a href="/en/#features" class="hover:text-cyan-accent transition-colors">Features</a></li>
+                            <li><a href="/en#pricing" class="hover:text-cyan-accent transition-colors">Pricing (€)</a></li>
+                            <li><a href="/en/channel-list.html" class="hover:text-cyan-accent transition-colors">Hungarian Channel List</a></li>
                             <li><a href="/en/about.html" class="hover:text-cyan-accent transition-colors">About Us</a></li>
                             <li><a href="/en/contact.html" class="hover:text-cyan-accent transition-colors">Contact</a></li>
                             <li><a href="/en/faq.html" class="hover:text-cyan-accent transition-colors">FAQ</a></li>
-                            <li><a href="/en/" class="hover:text-cyan-accent transition-colors">Home</a></li>
+                            <li><a href="/en/hungarian-tv-abroad.html" class="hover:text-cyan-accent transition-colors">Hungarian TV Abroad</a></li>
+                            <li><a href="/en/rtl-klub-abroad.html" class="hover:text-cyan-accent transition-colors">Watch RTL Klub Abroad</a></li>
+                            <li><a href="/en/tv2-abroad.html" class="hover:text-cyan-accent transition-colors">Watch TV2 Abroad</a></li>
+                            <li><a href="/en/m4-sport-abroad.html" class="hover:text-cyan-accent transition-colors">Watch M4 Sport Abroad</a></li>
+                            <li><a href="/en/hungarian-tv-uk.html" class="hover:text-cyan-accent transition-colors">Hungarian TV in the UK</a></li>
+                            <li><a href="/en/hungarian-tv-austria.html" class="hover:text-cyan-accent transition-colors">Hungarian TV in Austria</a></li>
+                            <li><a href="/en/hungarian-tv-germany.html" class="hover:text-cyan-accent transition-colors">Hungarian TV in Germany</a></li>
+                            <li><a href="/en/hungarian-tv-switzerland.html" class="hover:text-cyan-accent transition-colors">Hungarian TV in Switzerland</a></li>
                         </ul>
                     </div>
 
@@ -667,7 +731,7 @@
 
                     <div>
                         <h4 class="font-bold mb-4">Contact</h4>
-                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <span class="text-gray-500">coming soon</span></p>
+                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <a href="https://wa.me/19297186779" class="text-white hover:text-cyan-accent transition-colors font-medium" target="_blank" rel="noopener noreferrer">+1 929 718 6779</a></p>
                         <p class="text-sm text-gray-400 mb-4">Email: <a href="mailto:contact@magyariptvpro.com" class="hover:text-cyan-accent transition-colors">contact@magyariptvpro.com</a></p>
                         <p class="text-xs text-gray-500 mb-4">Support available 24/7</p>
                         <p class="text-sm"><a href="/" hreflang="hu" class="text-gray-400 hover:text-cyan-accent transition-colors">Magyar változat</a></p>

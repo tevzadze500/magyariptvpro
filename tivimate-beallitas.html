@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TiviMate Beállítás Útmutató (2026): IPTV Csatornák Telepítése Lépésről Lépésre</title>
-    <meta name="description" content="Állítsd be a TiviMate IPTV lejátszót Xtream Codes segítségével lépésről lépésre. Gyors zapping, EPG műsorújság, kedvencek. Kérj 24 órás ingyenes IPTV tesztet WhatsApp-on!">
+    <title>TiviMate Beállítás (2026): IPTV Telepítés Lépésről Lépésre</title>
+    <meta name="description" content="Állítsd be a TiviMate IPTV lejátszót Xtream Codes-szal lépésről lépésre: gyors zapping, magyar EPG műsorújság és 24 órás ingyenes teszt WhatsApp-on!">
     <meta name="keywords" content="tivimate beállítás, tivimate, iptv lejátszó, xtream codes, magyar iptv, ingyenes iptv teszt, epg">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#020617">
@@ -343,7 +343,7 @@
         .content-wrapper { position: relative; z-index: 1; }
     </style>
     <!-- Tailwind (compilé, auto-hébergé) -->
-    <link rel="stylesheet" href="/assets/tailwind.css?v=2">
+    <link rel="stylesheet" href="/assets/tailwind.css?v=3">
 </head>
 <body class="bg-deep-blue text-white antialiased">
 
@@ -461,6 +461,50 @@
                         <li><strong>Csatornák és EPG betöltése:</strong> A TiviMate automatikusan letölti a <strong>10 000+ csatornát</strong> és a teljes EPG műsorújságot. Indítsd újra az alkalmazást, rendezd kedvencekbe a csatornákat, és máris készen állsz a tévézésre.</li>
                     </ol>
 
+                    <h2>Magyar EPG (műsorújság) beállítása és időzóna eltolás (pl. Anglia -1 óra)</h2>
+                    <p>A TiviMate egyik legnagyobb előnye a kábeltelevíziókhoz hasonló, villámgyors <strong>EPG műsorújság</strong>. Az Xtream Codes profil hozzáadása után a TiviMate automatikusan letölti a magyar csatornák heti programját. Ha frissíteni szeretnéd a műsort, lépj a <em>Settings → EPG → Update EPG</em> menüpontba, és állítsd az automatikus frissítést 24 órás időközre (<em>Update interval: 24 hours</em>), valamint engedélyezd az <em>Update on app start</em> opciót.</p>
+                    <p><strong>Időeltolódás javítása külföldön (pl. Anglia / UK -1 óra):</strong> Ha az Egyesült Királyságban vagy más eltérő időzónában nézed a magyar adásokat, a TiviMate lehetővé teszi az EPG órájának pontos eltolását anélkül, hogy a tévé rendszeróráját elállítanád. Menj a <em>Settings → EPG → EPG Sources</em> menüpontba, válaszd ki a lejátszási listád EPG forrását, és a <strong>Time offset (h:mm)</strong> résznél állíts be <strong>-1:00</strong> értéket. Ezután a magyar műsorok kezdése hajszálpontosan a helyi időd szerint látszik.</p>
+
+                    <h2>Gyakori TiviMate telepítési hibák és gyors megoldásaik</h2>
+                    <ul>
+                        <li><strong>„An error occurred” bejelentkezéskor (<code>http://</code> vs <code>https://</code> URL):</strong> A TiviMate a legtöbb esetben azért dob hibát első hozzáadáskor, mert a felhasználó <code>https://</code>-t ír <code>http://</code> helyett, vagy lemarad a portszám a szerver URL végéről. Ellenőrizd karakterről karakterre a WhatsApp-on kapott címet.</li>
+                        <li><strong>Láthatatlan szóköz a jelszó vagy felhasználónév után:</strong> Ha telefonos távirányító alkalmazással (pl. Google TV app vagy Fire TV app) másolod be a belépési adatokat, gyakran egy felesleges szóköz kerül a szöveg végére. Töröld az üres karaktert az <em>Username</em> és <em>Password</em> mezők végéről!</li>
+                        <li><strong>458-as vagy 403-as hibakód / üres kép csatornaváltáskor:</strong> Győződj meg róla, hogy nincs másik eszközön egyszerre megnyitva ugyanaz az 1 képernyős előfizetés, és az Android TV / Firestick beállításaiban töröld a TiviMate gyorsítótárát (<em>Clear Cache</em>), majd a <em>Settings → Playback → Buffer size</em> opciót állítsd <em>Small</em> vagy <em>Normal</em> értékre.</li>
+                        <li><strong>Akadozó sportadás 50 fps csatornákon (M4 Sport, Spíler):</strong> A <em>Settings → Playback → Video decoder</em> menüpontban válaszd a <strong>Hardware</strong> dekódolást, és ha Firestick-et használsz, kapcsold be az <em>Auto frame rate (AFR)</em> opciót a tükörsima mozgásért.</li>
+                    </ul>
+
+                    <h2>Gyakori kérdések a TiviMate használatáról (GYIK)</h2>
+                    <div class="space-y-4 my-6">
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Elég az ingyenes TiviMate, vagy muszáj megvenni a Premium verziót?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Az élő magyar TV csatornák megtekintéséhez az ingyenes TiviMate verzió is elegendő. A TiviMate Companion-ön keresztül megvásárolható Premium verzió akkor hasznos, ha a VOD film- és sorozattárat, a 7 napos visszanézést (catch-up), a kedvencek csoportosítását és a műsorrögzítést is teljes körűen szeretnéd használni.</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Telepíthető a TiviMate Samsung vagy LG Smart TV-re?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">A TiviMate kizárólag Android TV, Google TV és Amazon Fire TV Stick rendszereken fut. Samsung (Tizen) és LG (webOS) tévéken az <a href="/ibo-player-beallitas.html" class="text-cyan-accent hover:underline">IBO Player</a> vagy a <a href="/smart-tv-iptv-beallitas.html" class="text-cyan-accent hover:underline">Smart TV útmutatónkban</a> ajánlott appokat javasoljuk — vagy egy 35–40 eurós Firestick csatlakoztatását.</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Hogyan tudom elrejteni a nem magyar csatornakategóriákat a TiviMate-ben?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Lépj a <em>Settings → Playlists → [A te listád] → Manage groups → TV</em> menüpontba, válaszd a <em>Hide all groups</em> lehetőséget, majd kapcsold vissza kizárólag a <strong>HU / Hungary</strong> csoportokat (a teljes <a href="/csatornalista.html" class="text-cyan-accent hover:underline">180+ magyar csatornalista</a> azonnal átlátható lesz).</p>
+                        </details>
+                        <details class="bg-card-bg border border-card-border rounded-xl p-5">
+                            <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                                <span>Működik a 7 napos visszanézés (Catch-up) TiviMate-ben?</span>
+                                <span class="text-cyan-accent font-mono">+</span>
+                            </summary>
+                            <p class="text-gray-300 text-sm mt-3 leading-relaxed">Igen! Az Xtream Codes csatlakozással a visszanézhető csatornák mellett egy kis óra ikon jelenik meg a TiviMate műsorújságban: egyszerűen lapozz balra az idővonalon a távirányítóval, és indítsd el bármely korábbi adást az elmúlt 7 napból.</p>
+                        </details>
+                    </div>
+
                     <h2>Nem akarsz a technikai részletekkel bajlódni? Segítünk!</h2>
                     <p>Tudjuk, hogy az adatok bepötyögése egy tévé távirányítóval néha bosszantó lehet. Ha szeretnéd megspórolni az időt, mi teljesen ingyen elvégezzük helyetted a teljes TiviMate konfigurációt! Ismerd meg hivatalos <a href="/" class="text-cyan-accent hover:underline font-medium">magyar IPTV előfizetés</a> csomagjainkat és kérj hozzáférést még ma.</p>
                     <p>Kattints az alábbi gombra, lépj velünk kapcsolatba WhatsApp-on, és mi azonnal beállítunk neked egy 24 órás, kötelezettségmentes <strong>ingyenes iptv teszt</strong> hozzáférést a saját Xtream Codes adataiddal. Az aktiválás nálunk mindössze 5 percet vesz igénybe, és máris élvezheted a prémium magyar és nemzetközi csatornákat a TiviMate villámgyors felületén!</p>
@@ -550,23 +594,26 @@
                             <span class="font-bold gradient-text">Magyar IPTV Pro</span>
                         </div>
                         <p class="text-sm text-gray-400">
-                            Prémium IPTV szolgáltatás Magyarországnak. 4K minőség, több mint 10 000+ élő csatorna.
+                            Prémium IPTV szolgáltatás Magyarországon és külföldön: 180+ magyar TV csatorna és 10 000+ nemzetközi élő adás 4K minőségben.
                         </p>
                     </div>
 
                     <div>
                         <h4 class="font-bold mb-4">Gyors linkek</h4>
                         <ul class="space-y-2 text-sm text-gray-400">
-                            <li><a href="/#pricing" class="hover:text-cyan-accent transition-colors">Csomagok & Árak</a></li>
+                            <li><a href="/#pricing" class="hover:text-cyan-accent transition-colors">Csomagok &amp; Árak</a></li>
+                            <li><a href="/csatornalista.html" class="hover:text-cyan-accent transition-colors">Magyar IPTV Csatornalista</a></li>
                             <li><a href="/rolunk.html" class="hover:text-cyan-accent transition-colors">Rólunk</a></li>
-                            <li><a href="/kapcsolat.html" class="hover:text-cyan-accent transition-colors">Kapcsolat & 0-24 Ügyfélszolgálat</a></li>
+                            <li><a href="/kapcsolat.html" class="hover:text-cyan-accent transition-colors">Kapcsolat &amp; 0-24 Ügyfélszolgálat</a></li>
                             <li><a href="/gyik.html" class="hover:text-cyan-accent transition-colors">Gyakori Kérdések (GYIK)</a></li>
                             <li><a href="/magyar-tv-kulfoldon.html" class="hover:text-cyan-accent transition-colors">Magyar TV Külföldön</a></li>
                             <li><a href="/rtl-klub-nezese-kulfoldon.html" class="hover:text-cyan-accent transition-colors">RTL Klub Külföldről</a></li>
                             <li><a href="/tv2-nezese-kulfoldon.html" class="hover:text-cyan-accent transition-colors">TV2 Nézése Külföldön</a></li>
+                            <li><a href="/m4-sport-eloben-kulfoldon.html" class="hover:text-cyan-accent transition-colors">M4 Sport Élőben Külföldről</a></li>
                             <li><a href="/magyar-tv-angliaban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Angliában (UK)</a></li>
                             <li><a href="/magyar-tv-ausztriaban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Ausztriában</a></li>
                             <li><a href="/magyar-tv-nemetorszagban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Németországban</a></li>
+                            <li><a href="/magyar-tv-svajcban.html" class="hover:text-cyan-accent transition-colors">Magyar TV Svájcban</a></li>
                         </ul>
                     </div>
 
@@ -587,7 +634,7 @@
 
                     <div>
                         <h4 class="font-bold mb-4">Kapcsolat</h4>
-                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <span class="text-gray-500">hamarosan elérhető</span></p>
+                        <p class="text-sm text-gray-400 mb-2" id="footerWhatsApp">WhatsApp: <a href="https://wa.me/19297186779" class="text-white hover:text-cyan-accent transition-colors font-medium" target="_blank" rel="noopener noreferrer">+1 929 718 6779</a></p>
                         <p class="text-sm text-gray-400 mb-4">Email: <a href="mailto:contact@magyariptvpro.com" class="hover:text-cyan-accent transition-colors">contact@magyariptvpro.com</a></p>
                         <p class="text-xs text-gray-500 mb-4">0-24 órában elérhető segítség</p>
                         <p class="text-sm"><a href="/en" hreflang="en" class="text-gray-400 hover:text-cyan-accent transition-colors">English version</a></p>
